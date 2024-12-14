@@ -6,7 +6,7 @@ import apple from '../../../assets/apple_podcasts.png'
 import youtube from '../../../assets/youtube.png'
 const PodcastSection: React.FC = () => {
     return (
-        <div className="bg-stone-100 py-16 px-6 md:px-20 lg:px-24 mb-10">
+        <div className="bg-[#f9f6f3] py-16 px-6 md:px-20 lg:px-24 mb-10">
             <div className="flex flex-col md:flex-row items-center justify-between">
                 {/* Left Section */}
                 <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
@@ -33,10 +33,10 @@ const PodcastSection: React.FC = () => {
             </div>
 
             {/* Featured Episodes */}
-            <div className="mt-12">
-                <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-2xl font-bold text-gray-800">Featured Episodes</h3>
-                    <div className="text-center w-full">
+            <div className="mt-12 bg-white rounded-2xl p-10">
+                <div className="flex flex-col md:flex-row items-center justify-between mb-6 gap-5">
+                    <h3 className="text-2xl lg:text-4xl 2xl:text-5xl font-serif font-bold text-gray-800">Featured Episodes</h3>
+                    <div className="text-center w-full lg:w-auto">
                         <a
                             href="#"
                             className="bg-gray-800 text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-900"
@@ -47,41 +47,41 @@ const PodcastSection: React.FC = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Episode 1 */}
-                    <div className="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <div className="bg-white">
                         <img
-                            src="https://via.placeholder.com/150" // Replace with episode thumbnail
+                            src="https://via.placeholder.com/400x250" // Replace with episode thumbnail
                             alt="Episode 1"
                             className="rounded-lg mb-4"
                         />
-                        <p className="text-sm text-gray-500 mb-2">June 27, 2024</p>
-                        <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                        <p className="text-base 2xl:text-xl text-gray-800 font-semibold mb-2">June 27, 2024</p>
+                        <h4 className="text-xl lg:text-2xl 2xl:text-4xl font-serif font-semibold text-black mb-2">
                             How to Make $10k/Month as a Writer - Nicolas Cole
                         </h4>
                     </div>
 
                     {/* Episode 2 */}
-                    <div className="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <div className="bg-white">
                         <img
-                            src="https://via.placeholder.com/150" // Replace with episode thumbnail
+                            src="https://via.placeholder.com/400x250" // Replace with episode thumbnail
                             alt="Episode 2"
                             className="rounded-lg mb-4"
                         />
-                        <p className="text-sm text-gray-500 mb-2">May 12, 2024</p>
-                        <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                            Confronting my CEO coach - Eric Partaker
+                        <p className="text-base 2xl:text-xl text-gray-800 font-semibold mb-2">June 27, 2024</p>
+                        <h4 className="text-xl lg:text-2xl 2xl:text-4xl font-serif font-semibold text-black mb-2">
+                            How to Make $10k/Month as a Writer - Nicolas Cole
                         </h4>
                     </div>
 
                     {/* Episode 3 */}
-                    <div className="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <div className="bg-white">
                         <img
-                            src="https://via.placeholder.com/150" // Replace with episode thumbnail
+                            src="https://via.placeholder.com/400x250" // Replace with episode thumbnail
                             alt="Episode 3"
                             className="rounded-lg mb-4"
                         />
-                        <p className="text-sm text-gray-500 mb-2">April 20, 2024</p>
-                        <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                            Why You’ve Not Met Your Person - Matthew Hussey
+                        <p className="text-base 2xl:text-xl text-gray-800 font-semibold mb-2">June 27, 2024</p>
+                        <h4 className="text-xl lg:text-2xl 2xl:text-4xl font-serif font-semibold text-black mb-2">
+                            How to Make $10k/Month as a Writer - Nicolas Cole
                         </h4>
                     </div>
                 </div>

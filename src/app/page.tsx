@@ -1,3 +1,4 @@
+import AboutSection from "./components/Home/AboutSection";
 import FooterSection from "./components/Home/FooterSection";
 import HelpSection from "./components/Home/HelpSection";
 import Navbar from "./components/Home/Navbar";
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <SubscriptionComponent />
       <HelpSection />
+      <AboutSection />
       <PodcastSection />
       <SubscribeSection />
       <ProductShowcase />      

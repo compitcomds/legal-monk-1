@@ -1,14 +1,15 @@
 'use client'
 import React, { useState } from "react";
-import { FaBook, FaPodcast, FaRegNewspaper, FaVideo, FaWrench } from "react-icons/fa";
-import { FiBookOpen, FiMonitor, FiTool } from "react-icons/fi";
+// import { FaBook, FaPodcast, FaRegNewspaper, FaVideo, FaWrench } from "react-icons/fa";
+// import { FiBookOpen, FiMonitor, FiTool } from "react-icons/fi";
+import { NavigationMenuDemo } from "./NavigationMenuDemo";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Mobile menu toggle
-  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false); // Mega menu toggle for all screens
+  // const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false); // Mega menu toggle for all screens
 
   return (
-    <nav className="bg-stone-100 rounded-t-xl lg:rounded-t-3xl p-4 lg:px-24 2xl:px-24">
+    <nav className="bg-[#f9f6f3] rounded-t-xl lg:rounded-t-3xl p-4 lg:px-24 2xl:px-24">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center font-bold">
@@ -22,8 +23,8 @@ const Navbar: React.FC = () => {
             My Book
           </a>
 
-          {/* Free Resources with Mega Menu */}
-          <div
+         <NavigationMenuDemo />
+          {/* <div
             className="relative group"
             onMouseEnter={() => setIsMegaMenuOpen(true)}
             onMouseLeave={() => setIsMegaMenuOpen(false)}
@@ -36,11 +37,11 @@ const Navbar: React.FC = () => {
               <span className="ml-1 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></span>
             </button>
 
-            {/* Mega Menu */}
+            
             {(isMegaMenuOpen || isMenuOpen) && (
               <div className="absolute -left-20 mt-6 w-[600px] p-10 bg-white shadow-lg rounded-lg z-50 group-hover:block">
                 <div className="grid grid-cols-2 gap-10">
-                  {/* Browse by type */}
+                  
                   <div>
                     <h3 className="font-bold text-black mb-6 text-xl">Browse by type:</h3>
                     <ul className="space-y-10 text-lg">
@@ -77,7 +78,7 @@ const Navbar: React.FC = () => {
                     </ul>
                   </div>
 
-                  {/* Browse by topic */}
+                  
                   <div>
                     <h3 className="font-bold text-black mb-6 text-xl">Browse by topic:</h3>
                     <ul className="space-y-10 text-lg">
@@ -111,20 +112,13 @@ const Navbar: React.FC = () => {
                           Tools & Tech
                         </a>
                       </li>
-                      {/* <li>
-                        <a
-                          href="#"
-                          className="text-black hover:underline font-bold text-sm"
-                        >
-                          all categories →
-                        </a>
-                      </li> */}
+                      
                     </ul>
                   </div>
                 </div>
               </div>
             )}
-          </div>
+          </div> */}
 
           <a href="#" className="text-black hover:underline">
             YouTube Academy
@@ -137,7 +131,7 @@ const Navbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
+        
         <button
           className="lg:hidden bg-yellow-400 p-2 rounded shadow-md"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -148,14 +142,14 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      
       {isMenuOpen && (
         <div className="lg:hidden mt-4 space-y-2">
           <a href="#" className="block text-black hover:underline">
             My Book
           </a>
-          {/* Mobile Mega Menu */}
-          <div>
+          <NavigationMenuDemo />
+          {/* <div>
             <button
               className="block text-black hover:underline w-full text-left"
               onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
@@ -167,7 +161,7 @@ const Navbar: React.FC = () => {
             {isMegaMenuOpen && (
               <div className="mt-2 p-4 bg-white shadow-lg rounded-lg">
                 <div className="grid grid-cols-2 gap-4">
-                  {/* Browse by type */}
+                  
                   <div>
                     <h3 className="font-bold text-black mb-2">Browse by type:</h3>
                     <ul className="space-y-2">
@@ -204,7 +198,7 @@ const Navbar: React.FC = () => {
                     </ul>
                   </div>
 
-                  {/* Browse by topic */}
+                  
                   <div>
                     <h3 className="font-bold text-black mb-2">Browse by topic:</h3>
                     <ul className="space-y-2">
@@ -238,20 +232,13 @@ const Navbar: React.FC = () => {
                           Tools & Tech
                         </a>
                       </li>
-                      {/* <li>
-                        <a
-                          href="#"
-                          className="text-black hover:underline font-bold text-sm"
-                        >
-                          all categories →
-                        </a>
-                      </li> */}
+                      
                     </ul>
                   </div>
                 </div>
               </div>
             )}
-          </div>
+          </div> */}
           <a href="#" className="block text-black hover:underline">
             YouTube Academy
           </a>

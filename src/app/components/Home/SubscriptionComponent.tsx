@@ -3,7 +3,7 @@ import Image from "next/image";
 import hero from "../../../assets/hero.png";
 const SubscriptionComponent: React.FC = () => {
     return (
-        <div className="flex flex-col items-center bg-stone-100 py-10 px-5 md:px-20 lg:px-24 font-serif  rounded-b-xl lg:rounded-b-3xl">
+        <div className="flex flex-col items-center bg-[#f9f6f3] py-10 px-5 md:px-20 lg:px-24 font-serif  rounded-b-xl lg:rounded-b-3xl">
             <div className="flex flex-col lg:flex-row items-center justify-between">
                 <div className="relative w-full lg:w-1/3">
                     <div className="absolute inset-0 bg-yellow-300 rounded-full w-40 h-40 md:w-52 md:h-52 -z-10"></div>

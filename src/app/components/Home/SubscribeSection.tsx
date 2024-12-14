@@ -2,7 +2,7 @@ import React from "react";
 
 const SubscribeSection: React.FC = () => {
     return (
-        <div className="bg-stone-200 py-16 px-6 md:px-20 lg:px-24 flex items-center justify-center rounded-lg shadow-lg">
+        <div className="bg-[#f9f6f3] py-16 px-6 md:px-20 lg:px-24 flex items-center justify-center rounded-lg shadow-lg">
             <div className="mt-10 bg-white shadow-lg rounded-lg flex flex-col lg:flex-row p-8 lg:p-16 w-full max-w-6xl">
                 <div className="flex flex-col w-full lg:px-14">
                     <h2 className="text-3xl lg:text-5xl text-black">
