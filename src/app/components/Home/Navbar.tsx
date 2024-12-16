@@ -9,8 +9,8 @@ const Navbar: React.FC = () => {
   // const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false); // Mega menu toggle for all screens
 
   return (
-    <nav className="bg-[#f9f6f3] rounded-t-xl lg:rounded-t-3xl p-4 lg:px-24 2xl:px-24">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav className="bg-[#f9f6f3] rounded-t-xl lg:rounded-t-3xl p-4 xl:px-20 2xl:px-24">
+      <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center font-bold">
           <span className="text-blue-500 text-3xl font-bold mr-2">Legal</span>
@@ -18,12 +18,12 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-6 font-semibold">
+        <div className="hidden xl:flex items-center space-x-6 font-semibold">
           <a href="#" className="text-black hover:underline">
             My Book
           </a>
 
-         <NavigationMenuDemo />
+          <NavigationMenuDemo />
           {/* <div
             className="relative group"
             onMouseEnter={() => setIsMegaMenuOpen(true)}
@@ -130,21 +130,23 @@ const Navbar: React.FC = () => {
             Join 230k+ Subscribers
           </button>
         </div>
-
-        
-        <button
-          className="lg:hidden bg-yellow-400 p-2 rounded shadow-md"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <span className="block w-6 h-0.5 bg-gray-900 mb-1"></span>
-          <span className="block w-6 h-0.5 bg-gray-900 mb-1"></span>
-          <span className="block w-6 h-0.5 bg-gray-900"></span>
-        </button>
+        <div className="flex items-center justify-between gap-8">
+          <button className="bg-orange-400 hidden md:block xl:hidden text-white px-4 py-2 rounded-full shadow-md">
+            Join 230k+ Subscribers
+          </button>
+          <button
+            className="xl:hidden bg-yellow-400 p-2 rounded shadow-md"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span className="block w-6 h-0.5 bg-gray-900 mb-1"></span>
+            <span className="block w-6 h-0.5 bg-gray-900 mb-1"></span>
+            <span className="block w-6 h-0.5 bg-gray-900"></span>
+          </button></div>
       </div>
 
-      
+
       {isMenuOpen && (
-        <div className="lg:hidden mt-4 space-y-2">
+        <div className="xl:hidden mt-4 space-y-2">
           <a href="#" className="block text-black hover:underline">
             My Book
           </a>
@@ -245,7 +247,7 @@ const Navbar: React.FC = () => {
           <a href="#" className="block text-black hover:underline">
             Productivity Lab
           </a>
-          <button className="block bg-orange-400 text-white w-full py-2 rounded-full shadow-md">
+          <button className="block md:hidden bg-orange-400 text-white w-full py-2 rounded-full shadow-md">
             Join 230k+ Subscribers
           </button>
         </div>

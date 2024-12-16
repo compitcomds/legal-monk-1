@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const HelpSection: React.FC = () => {
     return (
-        <div className="bg-white py-16 px-6 md:px-20 lg:px-40 lg:mt-20">
+        <div className="bg-white py-16 px-6 lg:px-6 2xl:px-40 lg:mt-20">
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

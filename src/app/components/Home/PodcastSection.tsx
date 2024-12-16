@@ -2,23 +2,24 @@
 import React from "react";
 import Image from "next/image";
 import spotify from '../../../assets/spotify.png'
+import deep from '../../../assets/deep_dive.webp'
 import apple from '../../../assets/apple_podcasts.png'
 import youtube from '../../../assets/youtube.png'
 const PodcastSection: React.FC = () => {
     return (
-        <div className="bg-[#f9f6f3] py-16 px-6 md:px-20 lg:px-24 mb-10">
-            <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="bg-[#f9f6f3] py-16 px-6 xl:px-24 mb-10">
+            <div className="flex flex-col lg:flex-row gap-8 items-center justify-between">
                 {/* Left Section */}
-                <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
-                    <img
-                        src="https://via.placeholder.com/450x500" // Replace with actual image URL
+                <div className="lg:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+                    <Image
+                        src={deep} // Replace with actual image URL 450x500
                         alt="Deep Dive Podcast"
                         className="mb-6 md:mb-0"
                     />
                 </div>
 
                 {/* Right Section */}
-                <div className="md:w-1/2 space-y-10">
+                <div className="lg:w-1/2 space-y-10">
                     <h2 className="text-4xl lg:text-7xl font-serif font-bold text-gray-800 mb-4">Deep Dive</h2>
                     <p className="text-xl lg:text-2xl">with <span className="font-bold">Parth Jain</span></p>
                     <p className="text-black mb-6 text-xl lg:text-2xl">

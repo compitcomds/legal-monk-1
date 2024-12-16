@@ -6,20 +6,24 @@ import PodcastSection from "./components/Home/PodcastSection";
 import ProductShowcase from "./components/Home/ProductShowcase";
 import SubscribeSection from "./components/Home/SubscribeSection";
 import SubscriptionComponent from "./components/Home/SubscriptionComponent";
+import VideoSlider from "./components/Home/VideoSlider";
 
 export default function Home() {
   return (
     <>
-    <div className="bg-white px-5 md:px-10 2xl:px-60 pt-3 md:pt-5 min-h-screen">
-      <Navbar />
-      <SubscriptionComponent />
-      <HelpSection />
-      <AboutSection />
-      <PodcastSection />
-      <SubscribeSection />
-      <ProductShowcase />      
-    </div>
-    <FooterSection />
+      <div className="bg-white px-5 2xl:px-60 pt-3 md:pt-5 min-h-screen">
+        <Navbar />
+        <SubscriptionComponent />
+        <HelpSection />
+        <AboutSection />
+      </div>
+      <VideoSlider />
+      <div className="bg-white px-5 2xl:px-60">
+        <PodcastSection />
+        <SubscribeSection />
+        <ProductShowcase />
+      </div>
+      <FooterSection />
     </>
   );
 }
