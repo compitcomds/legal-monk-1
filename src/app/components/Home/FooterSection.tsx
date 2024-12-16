@@ -39,7 +39,7 @@ const FooterSection: React.FC = () => {
                     <div className="w-full lg:flex flex-col lg:items-center">
                         <h2 className="font-bold text-black mb-4 lg:mb-10 lg:-ml-[20px]">More</h2>
                         <ul className="space-y-5 font-semibold">
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">About</a></li>
+                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">About Us</a></li>
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Jobs</a></li>
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Contact</a></li>
                         </ul>
