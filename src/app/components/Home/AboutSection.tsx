@@ -22,29 +22,55 @@ const AboutSection: React.FC = () => {
                         <p className="hover:no-underline underline">Read my full story</p> <span className="no-underline">&rarr;</span>
                     </a>
                 </div>
-
-                {/* Right Section */}
-                <div className="w-full grid grid-cols-2 gap-4">
-
+                <div className="w-full flex lg:hidden items-center justify-between gap-4">
+                    <div className="flex flex-col items-center justify-between gap-10">
+                        <div className="">
+                            <img
+                                src="https://via.placeholder.com/250" // Replace with the actual image URL
+                                alt="Ali Abdaal at a desk"
+                                className="rounded-lg shadow-md"
+                            />
+                            {/* <div className="absolute bg-orange-200 w-12 h-12 rounded-full top-0 left-1/3"></div> */}
+                        </div>
+                        <div className="">
+                            <img
+                                src="https://via.placeholder.com/250" // Replace with the actual image URL
+                                alt="Ali Abdaal"
+                                className="rounded-lg shadow-md h-auto object-cover"
+                            />
+                            {/* <div className="absolute bg-orange-200 w-16 h-16 rounded-full top-0 right-1/4"></div> */}
+                        </div></div>
                     <div className="">
                         <img
-                            src="https://via.placeholder.com/150" // Replace with the actual image URL
-                            alt="Ali Abdaal at a desk"
+                            src="https://via.placeholder.com/300x500" // Replace with the actual image URL
+                            alt="Ali Abdaal book"
                             className="rounded-lg shadow-md"
                         />
-                        {/* <div className="absolute bg-orange-200 w-12 h-12 rounded-full top-0 left-1/3"></div> */}
+                        {/* <div className="absolute bg-orange-200 w-12 h-12 rounded-full bottom-0 right-1/3"></div> */}
                     </div>
+                </div>
+                {/* Right Section */}
+                <div className="w-full hidden  lg:flex items-center justify-between gap-4">
+                    <div className="flex flex-col items-center justify-between gap-10">
+                        <div className="">
+                            <img
+                                src="https://via.placeholder.com/250" // Replace with the actual image URL
+                                alt="Ali Abdaal at a desk"
+                                className="rounded-lg shadow-md"
+                            />
+                            {/* <div className="absolute bg-orange-200 w-12 h-12 rounded-full top-0 left-1/3"></div> */}
+                        </div>
+                        <div className="">
+                            <img
+                                src="https://via.placeholder.com/250" // Replace with the actual image URL
+                                alt="Ali Abdaal"
+                                className="rounded-lg shadow-md h-auto object-cover"
+                            />
+                            {/* <div className="absolute bg-orange-200 w-16 h-16 rounded-full top-0 right-1/4"></div> */}
+                        </div></div>
                     <div className="">
                         <img
-                            src="https://via.placeholder.com/200" // Replace with the actual image URL
-                            alt="Ali Abdaal"
-                            className="rounded-lg shadow-md w-full max-w-1/2 h-auto object-cover"
-                        />
-                        {/* <div className="absolute bg-orange-200 w-16 h-16 rounded-full top-0 right-1/4"></div> */}
-                    </div>
-                    <div className="">
-                        <img
-                            src="https://via.placeholder.com/200" // Replace with the actual image URL
+                            src="https://via.placeholder.com/300x500" // Replace with the actual image URL
                             alt="Ali Abdaal book"
                             className="rounded-lg shadow-md"
                         />
