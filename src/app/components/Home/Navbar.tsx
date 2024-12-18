@@ -130,20 +130,17 @@ const Navbar: React.FC = () => {
             Join 230k+ Subscribers
           </button>
         </div>
-        <div className="flex items-center justify-between gap-8">
-          <button className="bg-orange-400 hidden md:block xl:hidden text-white px-4 py-2 rounded-full shadow-md">
-            Join 230k+ Subscribers
-          </button>
-          <button
-            className="xl:hidden bg-yellow-400 p-2 rounded shadow-md"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <span className="block w-6 h-0.5 bg-gray-900 mb-1"></span>
-            <span className="block w-6 h-0.5 bg-gray-900 mb-1"></span>
-            <span className="block w-6 h-0.5 bg-gray-900"></span>
-          </button></div>
+        
+        <button
+        className="xl:hidden bg-yellow-400 p-2 rounded shadow-md"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <span className="block w-6 h-0.5 bg-gray-900 mb-1"></span>
+        <span className="block w-6 h-0.5 bg-gray-900 mb-1"></span>
+        <span className="block w-6 h-0.5 bg-gray-900"></span>
+      </button>
       </div>
-
+      
 
       {isMenuOpen && (
         <div className="xl:hidden mt-4 space-y-2">
@@ -247,7 +244,7 @@ const Navbar: React.FC = () => {
           <a href="#" className="block text-black hover:underline">
             Productivity Lab
           </a>
-          <button className="block md:hidden bg-orange-400 text-white w-full py-2 rounded-full shadow-md">
+          <button className="block xl:hidden bg-orange-400 text-white w-fit px-3 py-2 rounded-full shadow-md">
             Join 230k+ Subscribers
           </button>
         </div>

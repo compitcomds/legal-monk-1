@@ -1,10 +1,11 @@
 "use client"
 
 import * as React from "react"
-// import Link from "next/link"
-
+import { FaBook, FaPodcast, FaRegNewspaper, FaVideo } from "react-icons/fa";
+import { FiBookOpen, FiMonitor, FiTool } from "react-icons/fi";
+import { GiGears } from "react-icons/gi";
+import { MdWorkOutline } from "react-icons/md";
 import { cn } from "@/lib/utils"
-// import { Icons } from "@/components/icons"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,96 +13,78 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-]
+const resourcesByType = [
+  { title: "Articles", href: "/", icon: <FaRegNewspaper className="text-orange-500" /> },
+  { title: "Book Notes", href: "/", icon: <FiBookOpen className="text-green-500" /> },
+  { title: "Videos", href: "/", icon: <FaVideo className="text-purple-500" /> },
+  { title: "Podcast", href: "/", icon: <FaPodcast className="text-blue-500" /> },
+  { title: "Newsletter", href: "/", icon: <FaBook className="text-yellow-500" /> },
+];
+
+const resourcesByTopic = [
+  { title: "Productivity", href: "/", icon: <GiGears className="text-yellow-500" /> },
+  { title: "YouTube", href: "/", icon: <FiMonitor className="text-orange-500" /> },
+  { title: "Studying", href: "/", icon: <FiTool className="text-purple-500" /> },
+  { title: "Online Business", href: "/", icon: <MdWorkOutline className="text-blue-500" /> },
+  { title: "Tools & Tech", href: "/", icon: <FiTool className="text-green-500" /> },
+];
 
 export function NavigationMenuDemo() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent font-normal lg:font-semibold text-lg px-0">Free Resources</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
+            <div className="grid w-[300px] md:w-[500px] lg:w-[600px] grid-cols-1 md:grid-cols-2 gap-6 p-4">
+              <div>
+                <h3 className="mb-3 text-md font-semibold">Browse by type:</h3>
+                <ul className="space-y-3">
+                  {resourcesByType.map((item) => (
+                    <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} />
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-3 text-md font-semibold">Browse by topic:</h3>
+                <ul className="space-y-3">
+                  {resourcesByTopic.map((item) => (
+                    <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} />
+                  ))}
+                </ul>
+              </div>
+            </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
+interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
+  title: string;
+  icon: React.ReactNode;
+}
+
+const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
+  ({ className, title, icon, ...props }, ref) => (
     <li>
       <NavigationMenuLink asChild>
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "flex items-center space-x-3 p-2 rounded-md transition hover:bg-gray-100",
             className
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
+          <span className="text-3xl w-10 h-10">{icon}</span>
+          <span className="text-xl font-medium">{title}</span>
         </a>
       </NavigationMenuLink>
     </li>
   )
-})
-ListItem.displayName = "ListItem"
+);
+ListItem.displayName = "ListItem";
