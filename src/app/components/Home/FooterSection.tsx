@@ -9,8 +9,8 @@ const FooterSection: React.FC = () => {
                     <div className="space-y-8 w-full">
                         <div className="flex items-center justify-center md:justify-start">
                             <img
-                                src="https://via.placeholder.com/100x40" // Replace with actual logo image URL
-                                alt="Ali Abdaal Logo"
+                                src="https://placehold.co/80x60" // Replace with actual logo image URL
+                                alt="Legal Monk logo"
                                 className="w-20 h-auto"
                             />
                             <h1 className="ml-3 text-2xl font-bold text-black">Legal Monk</h1>

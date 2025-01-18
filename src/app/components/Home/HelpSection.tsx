@@ -26,12 +26,12 @@ const HelpSection: React.FC = () => {
                                 <path d="M58.4434 19.4818C58.4495 19.8521 58.588 20.2079 58.8338 20.4849C59.0796 20.7619 59.4164 20.9417 59.7834 20.9918C60.1458 20.9542 60.4829 20.7886 60.734 20.5246C60.9852 20.2606 61.1339 19.9157 61.1534 19.5518C61.1495 19.2287 61.0256 18.9187 60.8055 18.682C60.5855 18.4454 60.2853 18.2991 59.9634 18.2718C59.7832 18.2452 59.5994 18.2559 59.4235 18.3033C59.2476 18.3506 59.0833 18.4336 58.9408 18.547C58.7983 18.6605 58.6806 18.802 58.595 18.9628C58.5095 19.1236 58.4578 19.3002 58.4434 19.4818Z" fill="#1B1624"></path>
                             </svg>
                         </div>
-                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Grow a YouTube Channel</h2>
+                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">FG Lawkit</h2>
                         <p className="text-black mb-6">
-                            Learn how to start a YouTube channel based on my years of experience.
+                        Provides opportunities and free resources in accessible formats to law students in northern India.
                         </p>
                         <a href="#" className="text-blue-600 font-semibold flex items-center">
-                            Get started <span className="ml-1">&rarr;</span>
+                            Click Here <span className="ml-1">&rarr;</span>
                         </a>
                     </div>
                     <div className="bg-stone-100 hover:bg-[#C9B1FB] p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
@@ -53,12 +53,11 @@ const HelpSection: React.FC = () => {
                                 <path d="M49.4377 73.1527C49.7482 73.2591 50.071 73.3253 50.3983 73.3497C52.5583 73.4762 54.7256 73.3383 56.8521 72.9392C57.2426 72.8722 57.5925 72.6576 57.8292 72.3398C57.9607 72.2159 58.0574 72.0596 58.1097 71.8867C58.1621 71.7137 58.1682 71.5301 58.1275 71.354C58.0868 71.1779 58.0007 71.0156 57.8778 70.8832C57.7549 70.7507 57.5994 70.6528 57.4268 70.5991C56.9871 70.4663 56.5313 70.3944 56.072 70.3856C55.2509 70.3856 54.5038 70.3856 53.7155 70.3856V70.4677C52.7959 70.4677 51.8763 70.4677 50.9649 70.4677C50.4422 70.503 49.9262 70.6051 49.4295 70.7715C48.9204 70.9275 48.4524 71.2149 48.4277 71.8389C48.4349 72.1367 48.5367 72.4245 48.7182 72.6607C48.8998 72.8968 49.1517 73.0691 49.4377 73.1527Z" fill="black"></path>
                             </svg>
                         </div>
-                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Boost Your Grades</h2>
+                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">sortmylawschool.com</h2>
                         <p className="text-black mb-6">
-                            How to study effectively for exams, with the best evidence-based techniques.
-                        </p>
-                        <a href="#" className="text-blue-600 font-semibold flex items-center">
-                            Get started <span className="ml-1">&rarr;</span>
+                        Offers free notes to help students across India excel in their semester and competitive exams.                        </p>
+                        <a href="https://sortmylawschool.com/case-material" className="text-blue-600 font-semibold flex items-center">
+                            Click Here <span className="ml-1">&rarr;</span>
                         </a>
                     </div>
                 </div>
@@ -98,12 +97,12 @@ const HelpSection: React.FC = () => {
                                 </defs>
                             </svg>
                         </div>
-                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Be More Productive</h2>
+                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Placement Without Politics (PWP)</h2>
                         <p className="text-black mb-6">
-                            How to execute efficiently, make time for what matters and have fun along the way.
+                        Creates awareness about internships and job opportunities, especially for students from smaller towns and cities in the finance, tech, and sustainability domains.
                         </p>
                         <a href="#" className="text-blue-600 font-semibold flex items-center">
-                            Get started <span className="ml-1">&rarr;</span>
+                            Click Here <span className="ml-1">&rarr;</span>
                         </a>
                     </div>
 
@@ -123,12 +122,12 @@ const HelpSection: React.FC = () => {
                                 <path d="M73.6215 25.9893C73.2807 26.0244 72.9661 26.1881 72.7417 26.447C72.5174 26.7059 72.4 27.0406 72.4137 27.3829C72.5401 27.6935 72.7535 27.9609 73.0281 28.1532C73.3028 28.3455 73.6271 28.4544 73.9622 28.4669C74.147 28.459 74.3309 28.4357 74.5119 28.3972L76.7882 28.1882C78.4215 28.1669 80.0514 28.0324 81.6661 27.7856C81.8209 27.7907 81.9752 27.7651 82.12 27.7101C82.2649 27.6551 82.3973 27.5719 82.5097 27.4652C82.6221 27.3586 82.7121 27.2307 82.7747 27.089C82.8372 26.9473 82.8709 26.7945 82.8739 26.6397C82.9126 26.028 82.4791 25.5479 81.6971 25.5092C78.9958 25.3749 76.2879 25.5359 73.6215 25.9893Z" fill="#1B1624"></path>
                             </svg>
                         </div>
-                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Build an Online Business</h2>
+                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Resources for All !</h2>
                         <p className="text-black mb-6">
-                            How to execute efficiently, make time for what matters and have fun along the way.
+                        All resources are free for those from marginalized backgrounds or first-generation learners. For more info, connect with me on LinkedIn!
                         </p>
                         <a href="#" className="text-blue-600 font-semibold flex items-center">
-                            Get started <span className="ml-1">&rarr;</span>
+                            Click Here <span className="ml-1">&rarr;</span>
                         </a>
                     </div>
 
@@ -136,12 +135,12 @@ const HelpSection: React.FC = () => {
                         {/* <div className="flex items-center justify-start text-gray-500 text-5xl mb-4">
                             <i className="fas fa-ellipsis-h"></i>
                         </div> */}
-                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">... and more!</h2>
+                        <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">... let's talk :)</h2>
                         <p className="text-black mb-6">
-                            Explore all content.
+                        Connect with me on LinkedIn
                         </p>
                         <a href="#" className="text-blue-600 font-semibold flex items-center">
-                            Explore all content <span className="ml-1">&rarr;</span>
+                            Click Here <span className="ml-1">&rarr;</span>
                         </a>
                     </div></div>
             </div>

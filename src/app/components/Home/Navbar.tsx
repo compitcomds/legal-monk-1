@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center font-bold">
           <span className="text-blue-500 text-3xl font-bold mr-2">Legal</span>
-          <span className="font-serif text-3xl text-black">Monk</span>
+          <span className=" text-3xl text-black">Startup Wala</span>
         </div>
 
         {/* Desktop Menu */}

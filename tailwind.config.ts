@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			title: ["Playfair Display", "sans-serif"],
+		},
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)'

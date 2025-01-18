@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <VideoSlider />
       <div className="bg-white px-5 2xl:px-60">
-        <PodcastSection />
+        {/* <PodcastSection /> */}
         <SubscribeSection />
         <ProductShowcase />
       </div>

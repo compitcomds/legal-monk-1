@@ -11,9 +11,9 @@ const SubscribeSection: React.FC = () => {
                     <p className="my-5 text-xl lg:text-2xl font-sans">Join a growing community of more than <span className="font-bold">230,000 friendly readers.</span></p>
                     <div className="mt-4 flex items-center gap-4">
                         <div className="flex items-center -space-x-2">
-                            <img src="https://via.placeholder.com/48" alt="User 1" className="w-12 h-12 rounded-full border-2 border-white" />
-                            <img src="https://via.placeholder.com/48" alt="User 2" className="w-12 h-12 rounded-full border-2 border-white" />
-                            <img src="https://via.placeholder.com/48" alt="User 3" className="w-12 h-12 rounded-full border-2 border-white" />
+                            <img src="https://placehold.co/48" alt="User 1" className="w-12 h-12 rounded-full border-2 border-white" />
+                            <img src="https://placehold.co/48" alt="User 2" className="w-12 h-12 rounded-full border-2 border-white" />
+                            <img src="https://placehold.co/48" alt="User 3" className="w-12 h-12 rounded-full border-2 border-white" />
 
                         </div>
                         <div className="flex flex-col">

@@ -3,23 +3,23 @@ import Image from "next/image";
 import hero from "../../../assets/hero.png";
 const SubscriptionComponent: React.FC = () => {
     return (
-        <div className="flex flex-col items-center bg-[#f9f6f3] py-10 px-5 md:px-20 lg:px-24 font-serif  rounded-b-xl lg:rounded-b-3xl">
+        <div className="flex flex-col items-center bg-[#f9f6f3] py-10 px-5 md:px-20 lg:px-24 font-title  rounded-b-xl lg:rounded-b-3xl">
             <div className="flex flex-col lg:flex-row items-center justify-between">
                 <div className="relative w-full lg:w-1/3">
                     <div className="absolute inset-0 bg-yellow-300 rounded-full w-40 h-40 md:w-52 md:h-52 -z-10"></div>
                     <Image
                         src={hero} // Replace with actual image URL
-                        alt="Ali"
+                        alt="Legal Monk"
                         className="rounded-full "
                     />
                 </div>
                 <div className="flex flex-col text-center md:text-start w-full lg:w-1/2">
-                    <h1 className="mt-6 text-4xl md:text-7xl font-bold text-black font-serif">
-                        Hey Friends!
+                    <h1 className="mt-6 text-4xl md:text-7xl font-bold text-black ">
+                        NAMASTE!
                     </h1>
-                    <p className="mt-2 lg:mt-8 text-lg md:text-2xl 2xl:text-4xl leading-5  text-black">
-                        I’m Ali. I’m a Doctor turned Entrepreneur, <span className=" font-semibold underline">YouTuber</span>,
-                        and the author of the New York Times bestseller, <span className=" font-semibold underline">Feel-Good Productivity</span>.
+                    <p className="mt-2 lg:mt-8 font-sans text-lg md:text-2xl 2xl:text-4xl leading-5  text-black">
+                        I’m Parth, a lawyer-turned-socialpreneur passionate about creating impact at the grassroots. Lifelong student of Yoga & Philosophy, sharing practical tips for productivity, career, & life from my experiences.
+
                     </p>
                 </div>
             </div>
@@ -32,9 +32,9 @@ const SubscriptionComponent: React.FC = () => {
                     <p className="my-5 text-xl lg:text-2xl font-sans">Join a growing community of more than <span className="font-bold">230,000 friendly readers.</span></p>
                     <div className="mt-4 flex items-center gap-4">
                         <div className="flex items-center -space-x-2">
-                            <img src="https://via.placeholder.com/48" alt="User 1" className="w-12 h-12 rounded-full border-2 border-white" />
-                            <img src="https://via.placeholder.com/48" alt="User 2" className="w-12 h-12 rounded-full border-2 border-white" />
-                            <img src="https://via.placeholder.com/48" alt="User 3" className="w-12 h-12 rounded-full border-2 border-white" />
+                            <img src="https://placehold.co/48" alt="User 1" className="w-12 h-12 rounded-full border-2 border-white" />
+                            <img src="https://placehold.co/48" alt="User 2" className="w-12 h-12 rounded-full border-2 border-white" />
+                            <img src="https://placehold.co/48" alt="User 3" className="w-12 h-12 rounded-full border-2 border-white" />
 
                         </div>
                         <div className="flex flex-col">

@@ -9,17 +9,19 @@ const AboutSection: React.FC = () => {
                     <h1 className="text-4xl lg:text-6xl 2xl:text-7xl font-bold text-black mb-6">
                         Hi, I’m <span className="text-blue-600">Parth Jain</span>
                     </h1>
-                    <p className="text-black mb-4 text-lg">
-                        I’m an ex-doctor turned YouTuber, Podcaster, entrepreneur and author. I’ve been creating YouTube videos for over 7 years and have a following of over 4 million on my main channel.
+                    <p className="text-black mb-4 text-lg lg:text-xl">
+                        Namaste, I’m Parth Jain.
+                        I’m a lawyer-turned-Youtuber, podcaster, and socialpreneur. I have been creating content and resources since the early years of my law school.
                     </p>
-                    <p className="text-black mb-4 text-lg">
-                        My YouTube journey started over 7 years ago when I was studying medicine at Cambridge University. I was creating videos to help people pass the entrance exams (This is when I started my first business too). Since then, the channel has grown to over 4 million subscribers.
+                    <p className="text-black mb-4 text-lg lg:text-xl">
+                    <span className="font-bold text-blue-500">Want to know what my superpower is?</span> I bring the smartest people into the room and convert their experiences and knowledge into accessible resources for the larger community.
+                    I primarily create content and resources for the underprivileged student community in the northern part of India, in Hindi.
                     </p>
                     <a
                         href="#"
                         className="text-black flex items-center gap-2 text-xl"
                     >
-                        <p className="hover:no-underline underline">Read my full story</p> <span className="no-underline">&rarr;</span>
+                        <p className="hover:no-underline underline">For my professional bio</p> <span className="no-underline">&rarr;</span>
                     </a>
                 </div>
                 <div className="w-full flex lg:hidden items-center justify-between gap-4">
