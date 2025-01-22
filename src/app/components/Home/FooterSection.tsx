@@ -8,12 +8,12 @@ const FooterSection: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
                     <div className="space-y-8 w-full">
                         <div className="flex items-center justify-center md:justify-start">
-                            <img
+                            {/* <img
                                 src="https://placehold.co/80x60" // Replace with actual logo image URL
                                 alt="Legal Monk logo"
                                 className="w-20 h-auto"
-                            />
-                            <h1 className="ml-3 text-2xl font-bold text-black">Legal Monk</h1>
+                            /> */}
+                            <h1 className="ml-3 text-2xl lg:text-3xl font-bold text-black">Legal Startup Wala</h1>
                         </div>
                         <p className="text-gray-600 mt-4 text-center lg:text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, ab.</p>
                         <div className="flex justify-center md:justify-start gap-4 mb-8 md:mb-0">
@@ -68,7 +68,7 @@ const FooterSection: React.FC = () => {
             </div>
 
             <div className="flex justify-between items-center border-t font-semibold border-gray-200 mt-8 pt-6">
-                <p className="text-black text-sm">© Legal Monk 2024. All rights reserved.</p>
+                <p className="text-black text-sm">© Legal Startup Wala 2024. All rights reserved.</p>
                 <div className="text-sm text-gray-600 space-x-4 flex">
                     <a href="#" className="hover:underline">Privacy Policy</a>
                     <span>/</span>

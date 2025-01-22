@@ -18,7 +18,7 @@ const SubscriptionComponent: React.FC = () => {
                         NAMASTE!
                     </h1>
                     <p className="mt-2 lg:mt-8 font-sans text-lg md:text-2xl 2xl:text-4xl leading-5  text-black">
-                        I’m Parth, a lawyer-turned-socialpreneur passionate about creating impact at the grassroots. Lifelong student of Yoga & Philosophy, sharing practical tips for productivity, career, & life from my experiences.
+                        I’m Parth, a lawyer-turned-socialpreneur passionate about creating impact at the <span className="font-semibold underline">grassroots</span>. Lifelong student of Yoga & Philosophy, sharing practical tips for <span className="font-semibold underline">productivity</span>, career, & life from my experiences.
 
                     </p>
                 </div>
@@ -73,12 +73,12 @@ const SubscriptionComponent: React.FC = () => {
             <div className="mt-10 flex flex-col justify-center items-center gap-4 font-semibold text-gray-600">
                 <span className="text-sm">As featured in:</span>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
-                    <img src="https://via.placeholder.com/150x50" alt="Business Insider" className="" />
-                    <img src="https://via.placeholder.com/150x50" alt="New York Times" className="" />
-                    <img src="https://via.placeholder.com/150x50" alt="Oxford Union" className="" />
-                    <img src="https://via.placeholder.com/150x50" alt="Cambridge Union" className="" />
-                    <img src="https://via.placeholder.com/150x50" alt="Radio 4" className="" />
-                    <img src="https://via.placeholder.com/150x50" alt="Men's Health" className="" />
+                    <img src="https://placehold.co/150x50" alt="Business Insider" className="" />
+                    <img src="https://placehold.co/150x50" alt="New York Times" className="" />
+                    <img src="https://placehold.co/150x50" alt="Oxford Union" className="" />
+                    <img src="https://placehold.co/150x50" alt="Cambridge Union" className="" />
+                    <img src="https://placehold.co/150x50" alt="Radio 4" className="" />
+                    <img src="https://placehold.co/150x50" alt="Men's Health" className="" />
                 </div>
             </div>
         </div>

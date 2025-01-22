@@ -14,14 +14,14 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center font-bold">
           <span className="text-blue-500 text-3xl font-bold mr-2">Legal</span>
-          <span className=" text-3xl text-black">Startup Wala</span>
+          <span className=" text-3xl text-blue-500">Startup Wala</span>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden xl:flex items-center space-x-6 font-semibold">
-          <a href="#" className="text-black hover:underline">
+          {/* <a href="#" className="text-black hover:underline">
             My Book
-          </a>
+          </a> */}
 
           <NavigationMenuDemo />
           {/* <div
@@ -121,13 +121,13 @@ const Navbar: React.FC = () => {
           </div> */}
 
           <a href="#" className="text-black hover:underline">
-            YouTube Academy
+            Zero-Cost Programs
           </a>
           <a href="#" className="text-black hover:underline">
-            Productivity Lab
+            Community Courses
           </a>
           <button className="bg-orange-400 text-white px-4 py-2 rounded-full shadow-md">
-            Join 230k+ Subscribers
+            My Support System
           </button>
         </div>
         
@@ -144,9 +144,9 @@ const Navbar: React.FC = () => {
 
       {isMenuOpen && (
         <div className="xl:hidden mt-4 space-y-2">
-          <a href="#" className="block text-black hover:underline">
+          {/* <a href="#" className="block text-black hover:underline">
             My Book
-          </a>
+          </a> */}
           <NavigationMenuDemo />
           {/* <div>
             <button
@@ -239,13 +239,13 @@ const Navbar: React.FC = () => {
             )}
           </div> */}
           <a href="#" className="block text-black hover:underline">
-            YouTube Academy
+            Zero-Cost Programs
           </a>
           <a href="#" className="block text-black hover:underline">
-            Productivity Lab
+          Community Courses
           </a>
           <button className="block xl:hidden bg-orange-400 text-white w-fit px-3 py-2 rounded-full shadow-md">
-            Join 230k+ Subscribers
+            My Support System
           </button>
         </div>
       )}

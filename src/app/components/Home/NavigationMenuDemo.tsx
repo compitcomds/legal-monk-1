@@ -16,19 +16,19 @@ import {
 } from "@/components/ui/navigation-menu"
 
 const resourcesByType = [
-  { title: "Articles", href: "/", icon: <FaRegNewspaper className="text-orange-500" /> },
+  { title: "My Notes", href: "/", icon: <FaRegNewspaper className="text-orange-500" /> },
   { title: "Book Notes", href: "/", icon: <FiBookOpen className="text-green-500" /> },
   { title: "Videos", href: "/", icon: <FaVideo className="text-purple-500" /> },
-  { title: "Podcast", href: "/", icon: <FaPodcast className="text-blue-500" /> },
-  { title: "Newsletter", href: "/", icon: <FaBook className="text-yellow-500" /> },
+  { title: "Free Courses", href: "/", icon: <FaPodcast className="text-blue-500" /> },
+  // { title: "Newsletter", href: "/", icon: <FaBook className="text-yellow-500" /> },
 ];
 
 const resourcesByTopic = [
-  { title: "Productivity", href: "/", icon: <GiGears className="text-yellow-500" /> },
-  { title: "YouTube", href: "/", icon: <FiMonitor className="text-orange-500" /> },
-  { title: "Studying", href: "/", icon: <FiTool className="text-purple-500" /> },
-  { title: "Online Business", href: "/", icon: <MdWorkOutline className="text-blue-500" /> },
-  { title: "Tools & Tech", href: "/", icon: <FiTool className="text-green-500" /> },
+  { title: "Top Mate", href: "/", icon: <GiGears className="text-yellow-500" /> },
+  { title: "Community Courses (Join Forces)", href: "/", icon: <FiTool className="text-purple-500" /> },
+  { title: "Media Coverage", href: "/", icon: <FiMonitor className="text-orange-500" /> },  
+  // { title: "Online Business", href: "/", icon: <MdWorkOutline className="text-blue-500" /> },
+  // { title: "Tools & Tech", href: "/", icon: <FiTool className="text-green-500" /> },
 ];
 
 export function NavigationMenuDemo() {
@@ -48,7 +48,7 @@ export function NavigationMenuDemo() {
                 </ul>
               </div>
               <div>
-                <h3 className="mb-3 text-md font-semibold">Browse by topic:</h3>
+                <h3 className="mb-3 text-md font-semibold">Gudies & Media:</h3>
                 <ul className="space-y-3">
                   {resourcesByTopic.map((item) => (
                     <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} />

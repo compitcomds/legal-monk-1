@@ -16,7 +16,7 @@ const HelpSection: React.FC = () => {
                     </div>
 
 
-                    <div className="bg-stone-100 hover:bg-[#FD976D] p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
+                    <a href="https://www.youtube.com/@fglawkit" className="bg-stone-100 hover:bg-[#FD976D] hover:scale-105 hover:transform hover:transition hover:ease-in-out p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
                         <div className="flex items-center justify-start text-5xl mb-4 rounded-lg p-1 bg-stone-100 w-fit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="110" viewBox="0 0 120 110" fill="none">
                                 <path d="M73.0546 48.4234C72.8415 47.1086 72.4406 45.8312 71.8643 44.6304C70.8568 42.582 69.3959 40.79 67.5925 39.3904C65.9535 38.1039 64.1156 37.0935 62.1511 36.399C60.2774 35.7965 58.324 35.4783 56.3559 35.4551C55.0845 35.4401 53.8162 35.5835 52.5803 35.882C51.1621 36.1564 49.798 36.6592 48.5409 37.3707C47.8226 37.7871 47.1528 38.2903 46.4588 38.7241C45.5845 39.2623 44.7812 39.9082 44.0678 40.6466C43.5963 41.1536 43.1636 41.6953 42.7734 42.2672C41.7339 43.7109 40.9735 45.3363 40.5316 47.0596C40.231 48.24 39.9993 49.4369 39.8376 50.6443C39.7152 51.4392 39.7001 52.2468 39.7925 53.0457C39.9105 53.9237 39.9035 54.812 40.0528 55.69C40.1373 56.3443 40.2648 56.9923 40.4345 57.6299C40.963 59.2403 41.7091 60.7709 42.652 62.1793C43.4448 63.4541 44.4785 64.5621 45.6953 65.4413C46.1499 65.7606 46.5768 66.118 47.0314 66.4304C48.62 67.5533 50.377 68.4166 52.2367 68.9879C52.6309 69.1204 53.0401 69.2032 53.4548 69.2343C54.2043 69.2586 54.947 69.3002 55.6931 69.3731C57.5213 69.5376 59.3639 69.325 61.1066 68.7485C62.9441 68.1212 64.7202 67.3267 66.4126 66.3748C66.8264 66.1447 67.2031 65.8534 67.53 65.5108C67.877 65.1637 68.1477 64.8167 68.4531 64.4454C69.6636 63.0729 70.7267 61.5772 71.6249 59.9827C72.2842 58.7885 72.7592 57.5016 73.0338 56.1654C73.313 54.858 73.4296 53.5211 73.3808 52.1851C73.412 50.923 73.3026 49.6613 73.0546 48.4234ZM66.4056 53.2157C65.5485 53.6634 64.7677 54.2568 63.8863 54.6455C63.2582 54.937 62.6474 55.2666 62.0262 55.5755C61.4051 55.8843 60.8325 56.1481 60.2425 56.45C58.8359 57.1695 57.4316 57.8924 56.0297 58.6189C55.2176 59.0388 54.4125 59.4691 53.6005 59.889C52.9753 60.1828 52.366 60.5095 51.7752 60.8676C51.6748 60.9311 51.5607 60.9696 51.4425 60.9799C51.3242 60.9901 51.2052 60.9719 51.0954 60.9267C50.9856 60.8815 50.8882 60.8106 50.8115 60.72C50.7347 60.6294 50.6808 60.5218 50.6543 60.4061C50.5358 59.919 50.4833 59.4183 50.4981 58.9173C50.4981 58.6119 50.4981 58.31 50.4981 58.0047C50.5398 56.9289 50.3906 55.8566 50.4704 54.7773C50.5467 53.7571 50.5294 52.7264 50.5675 51.7027C50.5918 50.9566 50.6786 50.2071 50.6716 49.461C50.6508 47.8265 50.8278 46.1955 50.8729 44.5645C50.852 44.3541 50.908 44.1434 51.0304 43.9711C51.1529 43.7989 51.3337 43.6768 51.5392 43.6275C51.7576 43.5814 51.9853 43.6185 52.1777 43.7316C53.6734 44.5159 55.2038 45.2412 56.6613 46.0914C57.7856 46.7507 58.9516 47.3302 60.0655 48.0069C60.7249 48.4095 61.4328 48.7392 62.1164 49.107C63.338 49.7733 64.5664 50.4743 65.7671 51.2238C66.1226 51.4394 66.426 51.7309 66.6555 52.0775C66.7252 52.1648 66.7746 52.2665 66.8 52.3753C66.8253 52.4841 66.8261 52.5971 66.8021 52.7062C66.7782 52.8153 66.7302 52.9177 66.6616 53.0059C66.593 53.094 66.5055 53.1657 66.4056 53.2157Z" fill="#FD976D" className="ali-icon-highlight"></path>
@@ -28,13 +28,13 @@ const HelpSection: React.FC = () => {
                         </div>
                         <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">FG Lawkit</h2>
                         <p className="text-black mb-6">
-                        Provides opportunities and free resources in accessible formats to law students in northern India.
+                            Provides opportunities and free resources in accessible formats to law students in northern India.
                         </p>
-                        <a href="#" className="text-blue-600 font-semibold flex items-center">
+                        <p className="text-blue-600 font-semibold flex items-center">
                             Click Here <span className="ml-1">&rarr;</span>
-                        </a>
-                    </div>
-                    <div className="bg-stone-100 hover:bg-[#C9B1FB] p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
+                        </p>
+                    </a>
+                    <a href="https://sortmylawschool.com/subject" className="bg-stone-100 hover:bg-[#C9B1FB] hover:scale-105 hover:transform hover:transition hover:ease-in-out p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
                         <div className="flex items-center justify-center text-purple-500 text-5xl mb-4 rounded-lg p-1 bg-stone-100 w-fit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
                                 <path d="M72.5595 43.5114C70.9033 44.1964 69.4801 45.3448 68.4606 46.8187C67.4411 48.2926 66.8686 50.0295 66.8119 51.8208C66.6189 53.465 66.8905 55.1303 67.5958 56.628C68.3011 58.1257 69.4119 59.3958 70.8023 60.2944C72.166 61.2884 73.7715 61.8981 75.4512 62.0599C77.1309 62.2216 78.8233 61.9295 80.3516 61.214C84.1614 59.4897 86.2716 56.5995 86.4276 52.3791C86.4728 51.7915 86.4728 51.2014 86.4276 50.6138C85.4915 44.1929 78.6273 40.7936 72.5595 43.5114Z" fill="#C9B1FB" className="ali-icon-highlight"></path>
@@ -55,14 +55,14 @@ const HelpSection: React.FC = () => {
                         </div>
                         <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">sortmylawschool.com</h2>
                         <p className="text-black mb-6">
-                        Offers free notes to help students across India excel in their semester and competitive exams.                        </p>
-                        <a href="https://sortmylawschool.com/case-material" className="text-blue-600 font-semibold flex items-center">
+                            Offers free notes to help students across India excel in their semester and competitive exams.                        </p>
+                        <p className="text-blue-600 font-semibold flex items-center">
                             Click Here <span className="ml-1">&rarr;</span>
-                        </a>
-                    </div>
+                        </p>
+                    </a>
                 </div>
                 <div className="space-y-6 lg:space-y-10">
-                    <div className=" bg-stone-100 hover:bg-[#FDD46B] p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
+                    <a href="https://www.youtube.com/@Placement_Without_Politics/featured" className=" bg-stone-100 hover:bg-[#FDD46B] hover:scale-105 hover:transform hover:transition hover:ease-in-out p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
                         <div className="flex items-center justify-start text-yellow-600 text-5xl mb-4 rounded-lg p-1 bg-stone-100 w-fit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
                                 <g clipPath="url(#clip0_6458_7402)">
@@ -99,15 +99,15 @@ const HelpSection: React.FC = () => {
                         </div>
                         <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Placement Without Politics (PWP)</h2>
                         <p className="text-black mb-6">
-                        Creates awareness about internships and job opportunities, especially for students from smaller towns and cities in the finance, tech, and sustainability domains.
+                            Creates awareness about internships and job opportunities, especially for students from smaller towns and cities in the finance, tech, and sustainability domains.
                         </p>
-                        <a href="#" className="text-blue-600 font-semibold flex items-center">
+                        <p className="text-blue-600 font-semibold flex items-center">
                             Click Here <span className="ml-1">&rarr;</span>
-                        </a>
-                    </div>
+                        </p>
+                    </a>
 
 
-                    <div className="bg-stone-100 hover:bg-[#5DCDF1] p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
+                    <a href="https://www.linkedin.com/in/parthjain98/" className="bg-stone-100 hover:bg-[#5DCDF1] hover:scale-105 hover:transform hover:transition hover:ease-in-out p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
                         <div className="flex items-center justify-start text-blue-500 text-5xl mb-4 rounded-lg p-1 bg-stone-100 w-fit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
                                 <path d="M53.2582 79.4521C56.5256 77.0286 57.687 73.7535 57.2844 69.8512C56.8818 65.949 54.8067 62.6893 52.0581 61.6208C52.2749 67.3349 52.7395 72.9947 52.7859 78.6546C52.7772 78.8193 52.8174 78.9829 52.9015 79.1248C52.9855 79.2667 53.1096 79.3805 53.2582 79.4521Z" fill="#5DCDF1" className="ali-icon-highlight"></path>
@@ -124,25 +124,26 @@ const HelpSection: React.FC = () => {
                         </div>
                         <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Resources for All !</h2>
                         <p className="text-black mb-6">
-                        All resources are free for those from marginalized backgrounds or first-generation learners. For more info, connect with me on LinkedIn!
+                            All resources are free for those from marginalized backgrounds or first-generation learners. For more info, connect with me on LinkedIn!
                         </p>
-                        <a href="#" className="text-blue-600 font-semibold flex items-center">
+                        <p className="text-blue-600 font-semibold flex items-center">
                             Click Here <span className="ml-1">&rarr;</span>
-                        </a>
-                    </div>
+                        </p>
+                    </a>
 
-                    <div className="bg-stone-100 hover:bg-[#FDD46B] p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
+                    <a href="https://www.linkedin.com/in/parthjain98/" className="bg-stone-100 hover:bg-[#FDD46B] hover:scale-105 hover:transform hover:transition hover:ease-in-out p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
                         {/* <div className="flex items-center justify-start text-gray-500 text-5xl mb-4">
                             <i className="fas fa-ellipsis-h"></i>
                         </div> */}
                         <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">... let's talk :)</h2>
                         <p className="text-black mb-6">
-                        Connect with me on LinkedIn
+                            Connect with me on LinkedIn
                         </p>
-                        <a href="#" className="text-blue-600 font-semibold flex items-center">
+                        <p className="text-blue-600 font-semibold flex items-center">
                             Click Here <span className="ml-1">&rarr;</span>
-                        </a>
-                    </div></div>
+                        </p>
+                    </a>
+                </div>
             </div>
         </div>
     );
