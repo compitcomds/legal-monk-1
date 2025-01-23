@@ -1,10 +1,10 @@
 "use client"
 
 import * as React from "react"
-import { FaBook, FaPodcast, FaRegNewspaper, FaVideo } from "react-icons/fa";
-import { FiBookOpen, FiMonitor, FiTool } from "react-icons/fi";
-import { GiGears } from "react-icons/gi";
-import { MdWorkOutline } from "react-icons/md";
+import { FaRegNewspaper, FaChalkboardTeacher } from "react-icons/fa";
+import { FiMonitor, FiUsers } from "react-icons/fi";
+import { GiBookshelf, GiVideoCamera } from "react-icons/gi";
+import { MdOutlineSchool } from "react-icons/md";
 import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
@@ -17,17 +17,17 @@ import {
 
 // Updated resourcesByType with new icons
 const resourcesByType = [
-  { title: "My Notes", href: "/", icon: <FaRegNewspaper className="text-orange-500" /> }, // Keeps the existing icon
-  { title: "Book Notes", href: "/", icon: <FiBookOpen className="text-green-500" /> }, // Changed to FiBookOpen for a "book" feeling
-  { title: "Videos", href: "/", icon: <FaVideo className="text-purple-500" /> }, // Kept the video icon
-  { title: "Free Courses", href: "/", icon: <MdWorkOutline className="text-blue-500" /> }, // Changed to MdWorkOutline for courses/workshops
+  { title: "My Notes", href: "/notes", icon: <FaRegNewspaper className="text-orange-500" /> }, // Kept the newspaper icon
+  { title: "Book Notes", href: "/book-notes", icon: <GiBookshelf className="text-green-500" /> }, // Changed to GiBookshelf for a book-shelf feel
+  { title: "Videos", href: "/videos", icon: <GiVideoCamera className="text-purple-500" /> }, // Changed to GiVideoCamera for video content
+  { title: "Free Courses", href: "/", icon: <FaChalkboardTeacher className="text-blue-500" /> }, // Changed to FaChalkboardTeacher for a teaching/learning vibe
 ];
 
 // Updated resourcesByTopic with new icons
 const resourcesByTopic = [
-  { title: "Top Mate", href: "/", icon: <GiGears className="text-yellow-500" /> }, // Kept GiGears (gears for tools/innovation)
-  { title: "Community Courses (Join Forces)", href: "/", icon: <FiTool className="text-purple-500" /> }, // Kept FiTool for tools/workshops
-  { title: "Media Coverage", href: "/", icon: <FiMonitor className="text-orange-500" /> }, // Kept FiMonitor for media and displays
+  { title: "Top Mate", href: "/", icon: <FiUsers className="text-yellow-500" /> }, // Changed to FiUsers for community focus
+  { title: "Community Courses (Join Forces)", href: "/", icon: <MdOutlineSchool className="text-purple-500" /> }, // Changed to MdOutlineSchool for educational focus
+  { title: "Media Coverage", href: "/", icon: <FiMonitor className="text-orange-500" /> }, // Kept FiMonitor for media/coverage
 ];
 
 export function NavigationMenuDemo() {

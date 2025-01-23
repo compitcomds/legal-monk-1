@@ -2,9 +2,9 @@ import AboutSection from "./components/Home/AboutSection";
 import FooterSection from "./components/Home/FooterSection";
 import HelpSection from "./components/Home/HelpSection";
 import Navbar from "./components/Home/Navbar";
-import PodcastSection from "./components/Home/PodcastSection";
-import ProductShowcase from "./components/Home/ProductShowcase";
-import SubscribeSection from "./components/Home/SubscribeSection";
+// import PodcastSection from "./components/Home/PodcastSection";
+// import ProductShowcase from "./components/Home/ProductShowcase";
+// import SubscribeSection from "./components/Home/SubscribeSection";
 import SubscriptionComponent from "./components/Home/SubscriptionComponent";
 import VideoSlider from "./components/Home/VideoSlider";
 
