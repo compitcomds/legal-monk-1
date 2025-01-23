@@ -6,7 +6,7 @@ const AboutSection: React.FC = () => {
             {/* Left Section */}
             <div className="flex flex-col-reverse lg:flex-row justify-between gap-6">
                 <div className="w-full mb-10 lg:mb-0">
-                    <h1 className="text-4xl lg:text-6xl 2xl:text-7xl font-bold text-black mb-6">
+                    <h1 className="text-4xl lg:text-4xl 2xl:text-7xl  font-bold text-black mb-6">
                         Hi, I’m <span className="text-blue-600">Parth Jain</span>
                     </h1>
                     <p className="text-black mb-4 text-lg lg:text-xl">
