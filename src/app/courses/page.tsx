@@ -1,6 +1,6 @@
 import React from "react";
 // import Image from "next/image";
-import Videos from "../components/videos";
+import Videos from "../components/courses";
 import Navbar from "../components/Home/Navbar";
 import FooterSection from "../components/Home/FooterSection";
 const SubscriptionComponent: React.FC = () => {
@@ -15,7 +15,7 @@ const SubscriptionComponent: React.FC = () => {
                         </div>
                         <div className="flex flex-col text-center md:text-start w-full lg:w-1/2">
                             <h1 className="mt-6 uppercase text-4xl md:text-7xl font-bold text-black ">
-                                Latest Videos
+                                Our Courses
                             </h1>
                             <p className="mt-2 lg:mt-8 font-sans text-lg md:text-2xl 2xl:text-4xl leading-5  text-black">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eius!

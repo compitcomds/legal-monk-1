@@ -19,8 +19,8 @@ import {
 const resourcesByType = [
   { title: "My Notes", href: "/notes", icon: <FaRegNewspaper className="text-orange-500" /> }, // Kept the newspaper icon
   { title: "Book Notes", href: "/book-notes", icon: <GiBookshelf className="text-green-500" /> }, // Changed to GiBookshelf for a book-shelf feel
-  { title: "Videos", href: "/videos", icon: <GiVideoCamera className="text-purple-500" /> }, // Changed to GiVideoCamera for video content
-  { title: "Free Courses", href: "/", icon: <FaChalkboardTeacher className="text-blue-500" /> }, // Changed to FaChalkboardTeacher for a teaching/learning vibe
+  // { title: "Videos", href: "/courses", icon: <GiVideoCamera className="text-purple-500" /> }, // Changed to GiVideoCamera for video content
+  { title: "Free Courses", href: "/courses", icon: <FaChalkboardTeacher className="text-blue-500" /> }, // Changed to FaChalkboardTeacher for a teaching/learning vibe
 ];
 
 // Updated resourcesByTopic with new icons
