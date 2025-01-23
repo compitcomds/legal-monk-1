@@ -15,20 +15,19 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
+// Updated resourcesByType with new icons
 const resourcesByType = [
-  { title: "My Notes", href: "/", icon: <FaRegNewspaper className="text-orange-500" /> },
-  { title: "Book Notes", href: "/", icon: <FiBookOpen className="text-green-500" /> },
-  { title: "Videos", href: "/", icon: <FaVideo className="text-purple-500" /> },
-  { title: "Free Courses", href: "/", icon: <FaPodcast className="text-blue-500" /> },
-  // { title: "Newsletter", href: "/", icon: <FaBook className="text-yellow-500" /> },
+  { title: "My Notes", href: "/", icon: <FaRegNewspaper className="text-orange-500" /> }, // Keeps the existing icon
+  { title: "Book Notes", href: "/", icon: <FiBookOpen className="text-green-500" /> }, // Changed to FiBookOpen for a "book" feeling
+  { title: "Videos", href: "/", icon: <FaVideo className="text-purple-500" /> }, // Kept the video icon
+  { title: "Free Courses", href: "/", icon: <MdWorkOutline className="text-blue-500" /> }, // Changed to MdWorkOutline for courses/workshops
 ];
 
+// Updated resourcesByTopic with new icons
 const resourcesByTopic = [
-  { title: "Top Mate", href: "/", icon: <GiGears className="text-yellow-500" /> },
-  { title: "Community Courses (Join Forces)", href: "/", icon: <FiTool className="text-purple-500" /> },
-  { title: "Media Coverage", href: "/", icon: <FiMonitor className="text-orange-500" /> },  
-  // { title: "Online Business", href: "/", icon: <MdWorkOutline className="text-blue-500" /> },
-  // { title: "Tools & Tech", href: "/", icon: <FiTool className="text-green-500" /> },
+  { title: "Top Mate", href: "/", icon: <GiGears className="text-yellow-500" /> }, // Kept GiGears (gears for tools/innovation)
+  { title: "Community Courses (Join Forces)", href: "/", icon: <FiTool className="text-purple-500" /> }, // Kept FiTool for tools/workshops
+  { title: "Media Coverage", href: "/", icon: <FiMonitor className="text-orange-500" /> }, // Kept FiMonitor for media and displays
 ];
 
 export function NavigationMenuDemo() {
@@ -48,7 +47,7 @@ export function NavigationMenuDemo() {
                 </ul>
               </div>
               <div>
-                <h3 className="mb-3 text-md font-semibold">Gudies & Media:</h3>
+                <h3 className="mb-3 text-md font-semibold">Guides & Media:</h3>
                 <ul className="space-y-3">
                   {resourcesByTopic.map((item) => (
                     <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} />

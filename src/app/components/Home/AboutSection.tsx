@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
                         I’m a lawyer-turned-Youtuber, podcaster, and socialpreneur. I have been creating content and resources since the early years of my law school.
                     </p>
                     <p className="text-black mb-4 text-lg lg:text-xl">
-                    <span className="font-bold text-blue-500">Want to know what my superpower is?</span> I bring the smartest people into the room and convert their experiences and knowledge into accessible resources for the larger community.
+                    <span className="font-bold text-blue-500">Want to know what my superpower is?</span><span className="font-semibold"> I bring the smartest people into the room and convert their experiences and knowledge into accessible resources for the larger community.</span>
                     I primarily create content and resources for the underprivileged student community in the northern part of India, in Hindi.
                     </p>
                     <a
@@ -82,7 +82,7 @@ const AboutSection: React.FC = () => {
             </div>
 
             {/* Bottom Buttons */}
-            <div className="mt-12 lg:mt-16 flex flex-col lg:flex-row gap-4 justify-center lg:justify-start w-full">
+            {/* <div className="mt-12 lg:mt-16 flex flex-col lg:flex-row gap-4 justify-center lg:justify-start w-full">
                 <a
                     href="#"
                     className="bg-[#5DCDF1] text-black text-center hover:text-white px-6 w-full py-3 rounded-lg font-semibold hover:bg-black"
@@ -101,7 +101,7 @@ const AboutSection: React.FC = () => {
                 >
                     Read My Book
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 };

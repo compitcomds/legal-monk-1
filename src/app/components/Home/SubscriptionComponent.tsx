@@ -9,7 +9,7 @@ const SubscriptionComponent: React.FC = () => {
                     <div className="absolute inset-0 bg-yellow-300 rounded-full w-40 h-40 md:w-52 md:h-52 -z-10"></div>
                     <Image
                         src={hero} // Replace with actual image URL
-                        alt="Legal Monk"
+                        alt="Legal startup wala"
                         className="rounded-full "
                     />
                 </div>
@@ -27,7 +27,7 @@ const SubscriptionComponent: React.FC = () => {
             <div className="mt-10 bg-white shadow-lg rounded-lg flex flex-col lg:flex-row p-8 lg:p-16 w-full max-w-5xl">
                 <div className="flex flex-col w-full lg:px-14">
                     <h2 className="text-3xl lg:text-5xl text-black">
-                        Subscribe to <span className="text-black font-bold">LifeNotes</span>
+                        Lorem ipsum  <span className="text-black font-bold">dolor sit.</span>
                     </h2>
                     <p className="my-5 text-xl lg:text-2xl font-sans">Join a growing community of more than <span className="font-bold">230,000 friendly readers.</span></p>
                     <div className="mt-4 flex items-center gap-4">
@@ -54,7 +54,7 @@ const SubscriptionComponent: React.FC = () => {
                     </div>
                 </div>
                 <div className="flex flex-col w-full">
-                    <p className="mt-4 text-black text-lg ">
+                    {/* <p className="mt-4 text-black text-lg ">
                         I share actionable productivity tips, practical life advice, and high-quality insights from across the web, directly to your inbox.
                     </p>
                     <form className="mt-5 lg:mt-10 max-w-2xl py-2 px-6 rounded-full bg-gray-50 border flex focus-within:border-gray-300">
@@ -66,11 +66,12 @@ const SubscriptionComponent: React.FC = () => {
                     <p className="mt-4 lg:mt-8 text-sm text-gray-600">
                         By submitting this form, you’ll be signed up to my free newsletter. I may also send you other emails about my courses. You can opt-out at any time. For more information, see our
                         <a href="#" className="text-blue-500 underline"> privacy policy</a>.
-                    </p>
+                    </p> */}
+                    <img src="https://placehold.co/150x100" alt="" />
                 </div>
             </div>
 
-            <div className="mt-10 flex flex-col justify-center items-center gap-4 font-semibold text-gray-600">
+            {/* <div className="mt-10 flex flex-col justify-center items-center gap-4 font-semibold text-gray-600">
                 <span className="text-sm">As featured in:</span>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
                     <img src="https://placehold.co/150x50" alt="Business Insider" className="" />
@@ -80,7 +81,7 @@ const SubscriptionComponent: React.FC = () => {
                     <img src="https://placehold.co/150x50" alt="Radio 4" className="" />
                     <img src="https://placehold.co/150x50" alt="Men's Health" className="" />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

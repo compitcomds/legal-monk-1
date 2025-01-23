@@ -10,46 +10,26 @@ const PopularVideosCarousel: React.FC = () => {
     const videos = [
         {
             id: 1,
-            title: "You're Destroying Your Mind – How to Control Dopamine",
+            title: "CV FOR LAW INTERNSHIP || LAW INTERNSHIP CV FOR BEGINNERS",
             date: "June 18, 2024",
-            image: "https://via.placeholder.com/300x200", // Replace with actual image
-            link: "/", // Dynamic video link
+            image: "https://i.ytimg.com/vi/ufOEAI-Tuok/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDVbgZWe4t_Frzc-mMm5X2KWEUcnA", // Replace with actual image
+            link: "https://youtu.be/ufOEAI-Tuok", // Dynamic video link
         },
         {
             id: 2,
-            title: "My honest advice to someone who wants financial freedom",
+            title: "How to become Data Privacy & Technology Lawyer | Data Protection and Privacy Laws",
             date: "April 23, 2024",
-            image: "https://via.placeholder.com/300x200",
+            image: "https://i.ytimg.com/vi/CSyqJaqOAG0/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC57Vk1yLdyv_o177Na1kgeclWe2Q",
             link: "/", // Dynamic video link
         },
         {
             id: 3,
-            title: "7 Mistakes to Avoid While Building Your First Business",
+            title: "Work with Tech-Sustainable Startup I Apply for Off-campus Internships for college students I PWP",
             date: "March 1, 2024",
-            image: "https://via.placeholder.com/300x200",
+            image: "https://placehold.co/500x300",
             link: "/", // Dynamic video link
         },
-        {
-            id: 4,
-            title: "You're Destroying Your Mind – How to Control Dopamine",
-            date: "June 18, 2024",
-            image: "https://via.placeholder.com/300x200", // Replace with actual image
-            link: "/", // Dynamic video link
-        },
-        {
-            id: 5,
-            title: "My honest advice to someone who wants financial freedom",
-            date: "April 23, 2024",
-            image: "https://via.placeholder.com/300x200",
-            link: "/", // Dynamic video link
-        },
-        {
-            id: 6,
-            title: "7 Mistakes to Avoid While Building Your First Business",
-            date: "March 1, 2024",
-            image: "https://via.placeholder.com/300x200",
-            link: "/", // Dynamic video link
-        },
+        
     ];
 
     return (
@@ -95,13 +75,13 @@ const PopularVideosCarousel: React.FC = () => {
                 {videos.map((video) => (
                     <SwiperSlide key={video.id}>
                         <div className="hover:shadow-lg p-2 rounded-2xl bg-[#f9f6f3] hover:bg-[#fd976d] transition-shadow duration-300 my-5 lg:my-10 overflow-hidden">
-                            <div className="flex flex-col hover:scale-110 transition duration-300">
+                            <div className="flex flex-col  transition duration-300">
                                 {/* Make the card image a link */}
                                 <a href={video.link}>
                                     <img
                                         src={video.image}
                                         alt={video.title}
-                                        className="w-full object-cover rounded-2xl mb-4"
+                                        className="object-cover rounded-2xl mb-4"
                                     />
                                 </a>
                                 <div className="p-4 lg:p-6 flex flex-col">
