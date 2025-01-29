@@ -22,11 +22,11 @@ const HelpSection: React.FC = () => {
 
                     <a href="https://www.youtube.com/@fglawkit" className="bg-stone-100 hover:bg-[#FD976D] hover:scale-105 hover:transform hover:transition hover:ease-in-out p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
                         <div className="flex items-center justify-start text-5xl mb-4 rounded-lg p-1 bg-stone-100 w-fit">
-                            <Image width={100} height={100} src={fglawkit} alt="fg" />
+                            <Image width={100} height={100} src={fglawkit} alt="fg" className="rounded-full" />
                         </div>
                         <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">FG Lawkit</h2>
                         <p className="text-black mb-6">
-                            Provides opportunities and free resources in accessible formats to law students in northern India.
+                            Provides opportunities and free resources in accessible formats to lawyers & students in northern India.
                         </p>
                         <p className="text-blue-600 font-semibold flex items-center">
                             Click Here <span className="ml-1">&rarr;</span>
@@ -47,7 +47,7 @@ const HelpSection: React.FC = () => {
                 <div className="space-y-6 lg:space-y-10">
                     <a href="https://www.youtube.com/@Placement_Without_Politics/featured" className=" bg-stone-100 hover:bg-[#FDD46B] hover:scale-105 hover:transform hover:transition hover:ease-in-out p-6 lg:p-10 rounded-3xl shadow-md flex flex-col justify-between">
                         <div className="flex items-center justify-start text-yellow-600 text-5xl mb-4 rounded-lg p-1 bg-stone-100 w-fit">
-                        <Image width={100} height={100} src={pwp} alt="pwp" />
+                        <Image width={100} height={100} src={pwp} alt="pwp" className="rounded-full" />
                         </div>
                         <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4 font-serif">Placement Without Politics (PWP)</h2>
                         <p className="text-black mb-6">

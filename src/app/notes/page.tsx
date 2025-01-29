@@ -25,8 +25,9 @@ const SubscriptionComponent: React.FC = () => {
                     </div>
                 </div>
                 <Notes />
-                <FooterSection />
+                
             </div>
+            <FooterSection />
         </>
     );
 };

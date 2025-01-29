@@ -1,10 +1,10 @@
 "use client"
 
 import * as React from "react"
-import { FaRegNewspaper, FaChalkboardTeacher } from "react-icons/fa";
-import { FiMonitor, FiUsers } from "react-icons/fi";
-import { GiBookshelf, GiVideoCamera } from "react-icons/gi";
-import { MdOutlineSchool } from "react-icons/md";
+
+import one from '../../../assets/1.png'
+import two from '../../../assets/2.png'
+import three from '../../../assets/3.png'
 import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
@@ -17,17 +17,16 @@ import {
 
 // Updated resourcesByType with new icons
 const resourcesByType = [
-  { title: "My Notes", href: "/notes", icon: <FaRegNewspaper className="text-orange-500" /> }, // Kept the newspaper icon
-  { title: "Book Notes", href: "/book-notes", icon: <GiBookshelf className="text-green-500" /> }, // Changed to GiBookshelf for a book-shelf feel
-  // { title: "Videos", href: "/courses", icon: <GiVideoCamera className="text-purple-500" /> }, // Changed to GiVideoCamera for video content
-  { title: "Free Courses", href: "/courses", icon: <FaChalkboardTeacher className="text-blue-500" /> }, // Changed to FaChalkboardTeacher for a teaching/learning vibe
+  { title: "My Notes", href: "/notes", icon: one.src }, // Use `.src` to access the image URL
+  { title: "Book Notes", href: "/book-notes", icon: two.src },
+  { title: "Zero-Cost Programs", href: "/courses", icon: three.src },
 ];
 
 // Updated resourcesByTopic with new icons
 const resourcesByTopic = [
-  { title: "Top Mate", href: "/", icon: <FiUsers className="text-yellow-500" /> }, // Changed to FiUsers for community focus
-  { title: "Community Courses (Join Forces)", href: "/", icon: <MdOutlineSchool className="text-purple-500" /> }, // Changed to MdOutlineSchool for educational focus
-  { title: "Media Coverage", href: "/", icon: <FiMonitor className="text-orange-500" /> }, // Kept FiMonitor for media/coverage
+  { title: "Top Mate", href: "/", icon: one.src }, // Use `.src` to access the image URL
+  { title: "Community Courses (Join Forces)", href: "/", icon: two.src },
+  { title: "Media Coverage", href: "/", icon: three.src },
 ];
 
 export function NavigationMenuDemo() {
@@ -64,7 +63,7 @@ export function NavigationMenuDemo() {
 
 interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
   title: string;
-  icon: React.ReactNode;
+  icon: string; // Updated to accept the image URL (string)
 }
 
 const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
@@ -79,7 +78,8 @@ const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
           )}
           {...props}
         >
-          <span className="text-3xl w-10 h-10">{icon}</span>
+          {/* Render the icon as an img element */}
+          <img src={icon} alt={title} className="w-10 h-10" />
           <span className="text-xl font-medium">{title}</span>
         </a>
       </NavigationMenuLink>

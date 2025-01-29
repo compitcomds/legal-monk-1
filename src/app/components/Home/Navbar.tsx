@@ -10,27 +10,28 @@ const Navbar: React.FC = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center font-bold">
-          <span className="text-blue-500 text-3xl font-bold mr-2">Legal</span>
-          <span className=" text-3xl text-blue-500">Startup Wala</span>
+          <img src="https://placehold.co/50x50" className="rounded-full" alt="" />
+          <span className="text-blue-500 text-2xl 2xl:text-4xl font-bold ml-2">Legal-</span>
+          <span className=" text-2xl 2xl:text-4xl text-blue-500">Startup Wala</span>
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden xl:flex items-center space-x-6 font-semibold">
+        <div className="hidden xl:flex items-center 2xl:text-lg space-x-6 font-semibold">
           <a href="/" className="text-black hover:underline">
             Home
           </a>
 
-          <NavigationMenuDemo />          
+          <NavigationMenuDemo />
 
-          <a href="#" className="text-black hover:underline">
+          <a href="/courses" className="text-black 2xl:text-lg hover:underline">
             Zero-Cost Programs
           </a>
-          <a href="#" className="text-black hover:underline">
+          <a href="/community-courses" className="text-black 2xl:text-lg hover:underline">
             Community Courses
           </a>
-          <button className="bg-orange-400 text-white px-4 py-2 rounded-full shadow-md">
+          <a href="/support" className="bg-orange-400 text-white px-4 py-2 rounded-full shadow-md">
             My Support System
-          </button>
+          </a>
         </div>
 
         <button
@@ -50,16 +51,16 @@ const Navbar: React.FC = () => {
             Home
           </a>
           <NavigationMenuDemo />
-          
-          <a href="#" className="block text-black hover:underline">
+
+          <a href="/courses" className="block text-black hover:underline">
             Zero-Cost Programs
           </a>
-          <a href="#" className="block text-black hover:underline">
+          <a href="/community-courses" className="block text-black hover:underline">
             Community Courses
           </a>
-          <button className="block xl:hidden bg-orange-400 text-white w-fit px-3 py-2 rounded-full shadow-md">
+          <a href="/support" className="block xl:hidden bg-orange-400 text-white w-fit px-3 py-2 rounded-full shadow-md">
             My Support System
-          </button>
+          </a>
         </div>
       )}
     </nav>

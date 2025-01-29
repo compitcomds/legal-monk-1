@@ -7,6 +7,7 @@ import Navbar from "./components/Home/Navbar";
 // import SubscribeSection from "./components/Home/SubscribeSection";
 import SubscriptionComponent from "./components/Home/SubscriptionComponent";
 import VideoSlider from "./components/Home/VideoSlider";
+import ComunityCourses from "./components/Home/CommunityCourses";
 
 export default function Home() {
   return (
@@ -16,13 +17,15 @@ export default function Home() {
         <SubscriptionComponent />
         <HelpSection />
         <AboutSection />
+        <ComunityCourses />
       </div>
       <VideoSlider />
-      <div className="bg-white px-5 2xl:px-60">
-        {/* <PodcastSection /> */}
-        {/* <SubscribeSection /> */}
-        {/* <ProductShowcase /> */}
-      </div>
+
+      {/* <div className="bg-white px-5 2xl:px-60">
+        <PodcastSection />
+        <SubscribeSection />
+        <ProductShowcase />
+      </div> */}
       <FooterSection />
     </>
   );

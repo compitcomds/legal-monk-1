@@ -15,7 +15,7 @@ const SubscriptionComponent: React.FC = () => {
                         </div>
                         <div className="flex flex-col text-center md:text-start w-full lg:w-1/2">
                             <h1 className="mt-6 uppercase text-4xl md:text-7xl font-bold text-black ">
-                                Our Courses
+                                Our Free Courses
                             </h1>
                             <p className="mt-2 lg:mt-8 font-sans text-lg md:text-2xl 2xl:text-4xl leading-5  text-black">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eius!
@@ -25,8 +25,9 @@ const SubscriptionComponent: React.FC = () => {
                     </div>
                 </div>
                 <Videos />
-                <FooterSection />
+                
             </div>
+            <FooterSection />
         </>
     );
 };

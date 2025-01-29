@@ -1,16 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import hero from "../../../assets/hero.png";
+import hero from "../../../assets/parth bhaiya.png";
+import parth from '../../../assets/parth bhaiya with students@3x.png'
 const SubscriptionComponent: React.FC = () => {
     return (
-        <div className="flex flex-col items-center bg-[#f9f6f3] py-10 px-5 md:px-20 lg:px-24 font-title  rounded-b-xl lg:rounded-b-3xl">
+        <div className="flex flex-col items-center bg-[#f9f6f3] lg:py-10 px-5 md:px-20 lg:px-24 font-title  rounded-b-xl lg:rounded-b-3xl">
             <div className="flex flex-col lg:flex-row items-center justify-between">
                 <div className="relative w-full lg:w-1/3">
                     <div className="absolute inset-0 bg-yellow-300 rounded-full w-40 h-40 md:w-52 md:h-52 -z-10"></div>
                     <Image
                         src={hero} // Replace with actual image URL
                         alt="Legal startup wala"
-                        className="rounded-full "
+                        className="w-full h-full"
                     />
                 </div>
                 <div className="flex flex-col text-center md:text-start w-full lg:w-1/2">
@@ -53,35 +54,13 @@ const SubscriptionComponent: React.FC = () => {
                             <span className="text-gray-600 font-sans text-sm ml-2 text-center flex items-center">200+ reviews</span></div>
                     </div>
                 </div>
-                <div className="flex flex-col w-full">
-                    {/* <p className="mt-4 text-black text-lg ">
-                        I share actionable productivity tips, practical life advice, and high-quality insights from across the web, directly to your inbox.
-                    </p>
-                    <form className="mt-5 lg:mt-10 max-w-2xl py-2 px-6 rounded-full bg-gray-50 border flex focus-within:border-gray-300">
-                        <input type="text" placeholder="Your Email" className="bg-transparent font-sans w-full focus:outline-none pr-4 font-semibold border-0 focus:ring-0 px-0 py-0" name="topic" />
-                        <button className="flex flex-row items-center justify-center min-w-20 lg:min-w-[130px] lg:px-4 rounded-full  border disabled:cursor-not-allowed disabled:opacity-50 transition ease-in-out duration-150 text-xs lg:text-base bg-[#5DCDF1] hover:bg-black hover:text-white font-medium tracking-wide border-transparent py-1 lg:py-1.5 h-[38px] -mr-3" >
-                            Subscribe
-                        </button>
-                    </form>
-                    <p className="mt-4 lg:mt-8 text-sm text-gray-600">
-                        By submitting this form, you’ll be signed up to my free newsletter. I may also send you other emails about my courses. You can opt-out at any time. For more information, see our
-                        <a href="#" className="text-blue-500 underline"> privacy policy</a>.
-                    </p> */}
-                    <img src="https://placehold.co/150x100" alt="" />
+                <div className="flex flex-col w-full mt-5 lg:mt-0">
+                    
+                    <Image className="rounded-lg" src={parth} alt="" />
                 </div>
             </div>
 
-            {/* <div className="mt-10 flex flex-col justify-center items-center gap-4 font-semibold text-gray-600">
-                <span className="text-sm">As featured in:</span>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
-                    <img src="https://placehold.co/150x50" alt="Business Insider" className="" />
-                    <img src="https://placehold.co/150x50" alt="New York Times" className="" />
-                    <img src="https://placehold.co/150x50" alt="Oxford Union" className="" />
-                    <img src="https://placehold.co/150x50" alt="Cambridge Union" className="" />
-                    <img src="https://placehold.co/150x50" alt="Radio 4" className="" />
-                    <img src="https://placehold.co/150x50" alt="Men's Health" className="" />
-                </div>
-            </div> */}
+            
         </div>
     );
 };

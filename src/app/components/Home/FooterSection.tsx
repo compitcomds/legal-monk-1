@@ -13,9 +13,9 @@ const FooterSection: React.FC = () => {
                                 alt="Legal Monk logo"
                                 className="w-20 h-auto"
                             /> */}
-                            <h1 className="ml-3 text-2xl lg:text-3xl font-bold text-black">Legal Startup Wala</h1>
+                            <h1 className="ml-3 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-black">Legal Startup Wala</h1>
                         </div>
-                        <p className="text-gray-600 mt-4 text-center lg:text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, ab.</p>
+                        <p className="text-gray-600 mt-4 text-center 2xl:text-lg lg:text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, ab.</p>
                         <div className="flex justify-center md:justify-start gap-4 mb-8 md:mb-0">
                             {[
                                 { href: "#", icon: "fab fa-youtube" },
@@ -37,8 +37,8 @@ const FooterSection: React.FC = () => {
                     </div>
 
                     <div className="w-full lg:flex flex-col lg:items-center">
-                        <h2 className="font-bold text-black mb-4 lg:mb-10 lg:-ml-[20px]">More</h2>
-                        <ul className="space-y-5 font-semibold">
+                        <h2 className="font-bold 2xl:text-xl text-black mb-4 lg:mb-10 lg:-ml-[20px]">More</h2>
+                        <ul className="space-y-5 2xl:text-lg font-semibold">
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">About Us</a></li>
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Jobs</a></li>
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Contact</a></li>
@@ -46,8 +46,8 @@ const FooterSection: React.FC = () => {
                     </div>
 
                     <div className="w-full lg:flex flex-col lg:items-center">
-                        <h2 className="font-bold text-black mb-4 lg:mb-10 lg:-ml-[30px]">Free Content</h2>
-                        <ul className="space-y-5 font-semibold">
+                        <h2 className="font-bold 2xl:text-xl text-black mb-4 lg:mb-10 lg:-ml-[30px]">Free Content</h2>
+                        <ul className="space-y-5 2xl:text-lg font-semibold">
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Newsletter</a></li>
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Articles & Guides</a></li>
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Podcast</a></li>
@@ -57,8 +57,8 @@ const FooterSection: React.FC = () => {
                     </div>
 
                     <div className="w-full lg:flex flex-col lg:items-center">
-                        <h2 className="font-bold text-black mb-4 lg:mb-10 lg:-ml-[70px]">Products</h2>
-                        <ul className="space-y-5 font-semibold">
+                        <h2 className="font-bold 2xl:text-xl text-black mb-4 lg:mb-10 lg:-ml-[70px]">Products</h2>
+                        <ul className="space-y-5 2xl:text-lg font-semibold">
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">My Book</a></li>
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Productivity Lab</a></li>
                             <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">YouTuber Academy</a></li>
