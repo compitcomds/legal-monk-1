@@ -59,7 +59,7 @@ const PopularVideosCarousel: React.FC = () => {
         <div className="mt-8 2xl:px-60">
             {/* Heading and Buttons */}
             <div className="flex justify-between items-center mb-6 px-5 ">
-                <h2 className="text-[34px] lg:text-7xl 2xl:text-7xl font-bold font-serif">
+                <h2 className="text-[34px] lg:text-7xl 2xl:text-7xl font-extrabold font-title">
                 Dive Into These <br className="hidden md:block" /><span className=" text-blue-600">Resourceful</span> Videos
                 </h2>
                 <div className="flex space-x-4">
