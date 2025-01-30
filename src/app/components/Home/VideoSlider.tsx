@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import two from '../../../assets/pwp.png'
+import Image from "next/image";
 // import "./PopularVideosCarousel.css"; // Optional for custom styling
 
 const PopularVideosCarousel: React.FC = () => {
@@ -12,21 +14,21 @@ const PopularVideosCarousel: React.FC = () => {
             id: 1,
             title: "CV FOR LAW INTERNSHIP || LAW INTERNSHIP CV FOR BEGINNERS",
             date: "June 18, 2024",
-            image: "https://placehold.co/500x300", // Replace with actual image
+            image: two, // Replace with actual image
             link: "https://youtu.be/ufOEAI-Tuok", // Dynamic video link
         },
         {
             id: 2,
             title: "Work with Tech-Sustainable Startup I Apply for Off-campus Internships for college students I PWP",
             date: "March 1, 2024",
-            image: "https://placehold.co/500x300",
+            image: two,
             link: "/", // Dynamic video link
         },
         {
             id: 3,
             title: "How to become Data Privacy & Technology Lawyer | Data Protection and Privacy Laws",
             date: "April 23, 2024",
-            image: "https://placehold.co/500x300",
+            image: two,
             link: "/", // Dynamic video link
         },
         
@@ -34,21 +36,21 @@ const PopularVideosCarousel: React.FC = () => {
             id: 4,
             title: "CV FOR LAW INTERNSHIP || LAW INTERNSHIP CV FOR BEGINNERS",
             date: "June 18, 2024",
-            image: "https://placehold.co/500x300", // Replace with actual image
+            image: two, // Replace with actual image
             link: "https://youtu.be/ufOEAI-Tuok", // Dynamic video link
         },
         {
             id: 5,
             title: "Work with Tech-Sustainable Startup I Apply for Off-campus Internships for college students I PWP",
             date: "March 1, 2024",
-            image: "https://placehold.co/500x300",
+            image: two,
             link: "/", // Dynamic video link
         },
         {
             id: 6,
             title: "How to become Data Privacy & Technology Lawyer | Data Protection and Privacy Laws",
             date: "April 23, 2024",
-            image: "https://placehold.co/500x300",
+            image: two,
             link: "/", // Dynamic video link
         },
         
@@ -102,7 +104,7 @@ const PopularVideosCarousel: React.FC = () => {
                             <div className="flex flex-col  transition duration-300">
                                 {/* Make the card image a link */}
                                 <a href={video.link}>
-                                    <img
+                                    <Image
                                         src={video.image}
                                         alt={video.title}
                                         className="object-cover rounded-2xl mb-4"
