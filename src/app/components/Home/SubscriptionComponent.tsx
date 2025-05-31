@@ -35,7 +35,7 @@ const SubscriptionComponent: React.FC = () => {
             </div>
 
             <div className="mt-10 bg-white shadow rounded-3xl relative flex flex-col lg:flex-row mb-10 p-8 lg:p-14 w-full max-w-7xl">
-                <img src="./icons/8.png" className="absolute hidden lg:block h-36 -right-8 -top-20" alt="" />
+                <img src="./icons/8.png" className="absolute hidden lg:block h-36 -right-16 -top-16" alt="" />
                 <div className="flex flex-col w-full lg:px-14">
                     <h2 className={`${recoleta.className} text-3xl lg:text-5xl text-black`}>
                         Better than Any Consultancy...
