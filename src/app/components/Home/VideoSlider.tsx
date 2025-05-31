@@ -64,7 +64,7 @@ const PopularVideosCarousel: React.FC = () => {
             {/* Heading and Buttons */}
             <div className="flex justify-between items-center mb-6 px-5 ">
                 <h2 className={`${recoleta.className} text-[34px] lg:text-7xl 2xl:text-7xl font-bold`}>
-                Dive Into These <br className="hidden md:block" /><span className=" text-blue-600">Resourceful</span> Videos
+                Dive Into These <br className="hidden md:block" /><span className=" text-blue-600">Resourceful</span> <span className="relative">Videos <img src="./icons/yellow.png" className="w-60 absolute left-2 right-0 top-5 lg:top-10" alt="" /></span>
                 </h2>
                 <div className="flex space-x-4">
                     <button

@@ -10,7 +10,7 @@ const AboutSection: React.FC = () => {
             <div className="flex flex-col-reverse lg:flex-row justify-between gap-6 lg:gap-10 2xl:gap-32">
                 <div className="w-full mb-10 lg:mb-0">
                     <h1 className={`${recoleta.className} text-4xl lg:text-4xl 2xl:text-7xl  font-semibold text-black mb-6`}>
-                        Hi, I’m <span className="text-blue-600">Parth Jain</span>
+                        Hi, I’m <span className="text-blue-600 relative">Parth Jain <img src="./icons/yellow.png" className="w-40 absolute right-0 top-5" alt="" /></span>
                     </h1>
                     <p className={`${poppins.className} text-black mb-4 text-lg font-poppins lg:text-xl`}>
                         Namaste, I’m Parth Jain.
