@@ -26,7 +26,7 @@ const SubscriptionComponent: React.FC = () => {
                             NAMASTE!
                             <img src="./icons/one.png" className="absolute w-56 left-16 lg:left-0 lg:w-auto top-2 lg:top-5" alt="" />
                         </h1><img src="./icons/1.png" className="w-24 h-24 hidden lg:block" alt="" /></div>
-                    <p className={`${poppins.className} mt-10 lg:mt-8 font-sans text-lg md:text-2xl 2xl:text-4xl leading-5  text-black`}>
+                    <p className={`${poppins.className} mt-10 lg:mt-8 font-sans text-lg md:text-2xl leading-5  text-black`}>
                         I am Parth, a master's student on a 100% scholarship at Penn State University, USA. I have also secured admission to LSE and various other prestigious universities across the globe.
                         <br /><span className={`${recoleta.className}`}>My job : Helping you secure scholarships to study abroad</span>
 
