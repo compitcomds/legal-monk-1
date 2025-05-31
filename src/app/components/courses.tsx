@@ -84,7 +84,7 @@ const App: React.FC = () => {
     : episodes.filter(episode => episode.category === selectedCategory);
 
   return (
-    <div className="p-4">
+    <div className="p-4 mb-16 lg:mb-28">
       <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold mb-4 lg:my-10">Listen to Recent Episodes</h1>
       <div className="flex flex-wrap gap-4 lg:gap-5 mb-4 lg:my-8">
         {categories.map(category => (

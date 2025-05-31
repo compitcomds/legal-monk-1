@@ -10,8 +10,8 @@ const Navbar: React.FC = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center font-bold">
-          <img src="https://placehold.co/50x50" className="rounded-full" alt="" />
-          <span className="text-blue-500 text-2xl 2xl:text-4xl font-bold ml-2">Legal-</span>
+          {/* <img src="https://placehold.co/50x50" className="rounded-full" alt="" /> */}
+          <span className="text-blue-500 text-2xl 2xl:text-4xl font-bold ml-2">Legal</span>
           <span className=" text-2xl 2xl:text-4xl text-blue-500">Startup Wala</span>
         </a>
 
@@ -21,12 +21,12 @@ const Navbar: React.FC = () => {
             Home
           </a>
 
-          <NavigationMenuDemo />
+          {/* <NavigationMenuDemo /> */}
 
-          <a href="/courses" className="text-black 2xl:text-lg hover:underline">
-            Zero-Cost Programs
+          <a href="/notes" className="text-black 2xl:text-lg hover:underline">
+            Free Resources
           </a>
-          <a href="/community-courses" className="text-black 2xl:text-lg hover:underline">
+          <a href="/#community" className="text-black 2xl:text-lg hover:underline">
             Community Courses
           </a>
           <a href="/support" className="bg-orange-400 text-white px-4 py-2 rounded-full shadow-md">
@@ -46,19 +46,20 @@ const Navbar: React.FC = () => {
 
 
       {isMenuOpen && (
-        <div className="xl:hidden mt-4 space-y-2">
+        <div className="xl:hidden flex flex-col mt-4 space-y-6">
           <a href="/" className="text-black hover:underline">
             Home
           </a>
-          <NavigationMenuDemo />
 
-          <a href="/courses" className="block text-black hover:underline">
-            Zero-Cost Programs
+          {/* <NavigationMenuDemo /> */}
+
+          <a href="/notes" className="text-black 2xl:text-lg hover:underline">
+            Free Resources
           </a>
-          <a href="/community-courses" className="block text-black hover:underline">
+          <a href="/#community" className="text-black 2xl:text-lg hover:underline">
             Community Courses
           </a>
-          <a href="/support" className="block xl:hidden bg-orange-400 text-white w-fit px-3 py-2 rounded-full shadow-md">
+          <a href="/support" className="bg-orange-400 text-white px-4 py-2 w-fit rounded-full shadow-md">
             My Support System
           </a>
         </div>

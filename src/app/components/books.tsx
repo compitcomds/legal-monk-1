@@ -50,7 +50,7 @@ const App: React.FC = () => {
     : books.filter(book => book.category === selectedCategory);
 
   return (
-    <div className="p-4">
+    <div className="p-4 mb-16 lg:mb-28">
       <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:my-10">Recent Books</h1>
       <div className="flex flex-wrap gap-3 mb-4">
         {categories.map(category => (

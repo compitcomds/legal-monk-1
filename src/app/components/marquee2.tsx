@@ -31,7 +31,7 @@ const items = [
   
   export default function Page() {
     return (
-      <div className="relative flex  items-center">
+      <div className="relative flex  items-center mb-16 lg:mb-28">
         <div className="relative flex max-w-[100vw] overflow-hidden py-5">
           <div className="flex w-max animate-marquee [--duration:60s] hover:[animation-play-state:paused]">
             {[...items, ...items].map((item, index) => (

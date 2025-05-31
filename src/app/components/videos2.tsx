@@ -84,8 +84,8 @@ const App: React.FC = () => {
     : episodes.filter(episode => episode.category === selectedCategory);
 
   return (
-    <div className="p-4">
-      <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold mb-4 lg:my-10">Explore All Courses</h1>
+    <div className="p-4 mb-16 lg:mb-28 space-y-8">
+      <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold">Explore All Courses</h1>
       <div className="flex flex-wrap gap-4 lg:gap-5 mb-4 lg:my-8">
         {categories.map(category => (
           <button

@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import two from '../../../assets/pwp.png'
 import Image from "next/image";
+import { recoleta } from "@/app/fonts";
+import { poppins } from "@/app/fonts";
 // import "./PopularVideosCarousel.css"; // Optional for custom styling
 
 const PopularVideosCarousel: React.FC = () => {
@@ -58,10 +60,10 @@ const PopularVideosCarousel: React.FC = () => {
     ];
 
     return (
-        <div className="mt-8 2xl:px-60">
+        <div className="2xl:px-60 mb-16 lg:mb-28">
             {/* Heading and Buttons */}
             <div className="flex justify-between items-center mb-6 px-5 ">
-                <h2 className="text-[34px] lg:text-7xl 2xl:text-7xl font-extrabold font-title">
+                <h2 className={`${recoleta.className} text-[34px] lg:text-7xl 2xl:text-7xl font-bold`}>
                 Dive Into These <br className="hidden md:block" /><span className=" text-blue-600">Resourceful</span> Videos
                 </h2>
                 <div className="flex space-x-4">
@@ -111,7 +113,7 @@ const PopularVideosCarousel: React.FC = () => {
                                     />
                                 </a>
                                 <div className="p-4 lg:p-6 flex flex-col">
-                                    <h3 className="text-lg lg:text-2xl 2xl:text-3xl font-semibold mb-2">{video.title}</h3>
+                                    <h3 className={`${poppins.className} text-lg lg:text-2xl 2xl:text-3xl font-semibold font-poppins mb-2`}>{video.title}</h3>
                                     <p className="text-gray-500 mb-4">{video.date}</p>
                                     {/* Make the "View" button a link */}
                                     <a

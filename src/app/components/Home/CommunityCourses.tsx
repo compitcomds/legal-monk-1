@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
-
+import { recoleta } from "@/app/fonts";
+import { poppins } from "@/app/fonts";
 const PopularVideosCarousel: React.FC = () => {
     const videos = [
         {
@@ -48,13 +49,13 @@ const PopularVideosCarousel: React.FC = () => {
     ];
 
     return (
-        <div className="my-8">
+        <div className="" id="community">
             {/* Heading */}
             <div className="mb-6">
-                <h2 className="text-[34px] lg:text-7xl text-blue-600 2xl:text-7xl font-bold font-serif">
-                    Community Courses
+                <h2 className={`${recoleta.className} text-[34px] lg:text-7xl text-blue-600 2xl:text-7xl font-semibold font-serif`}>
+                  No Agency! No Commission!  
                 </h2>
-                <p className="text-lg lg:text-xl 2xl:text-2xl ml-2 mt-4">Here, we create resources with experts to help learners. Each course sold supports creators, provides tools to those who need them, and helps us make free resources for everyone</p>
+                <p className={`${poppins.className} text-lg lg:text-xl 2xl:text-2xl ml-2 mt-4`}><span className="font-semibold">Community Courses –</span> I’m building a community of Indians studying abroad to support other Indian students on their journey. If you’d like to contribute or be part of this initiative, please get in touch.</p>
             </div>
 
             {/* Video Cards Grid */}
@@ -74,8 +75,8 @@ const PopularVideosCarousel: React.FC = () => {
                                 />
                             </a>
                             <div className="flex flex-col text-center">
-                                <h3 className="text-3xl lg:text-3xl 2xl:text-3xl font-semibold mb-2">{video.title}</h3>
-                                <p className="text-black text-lg mb-4 font-semibold">Starts at {video.price}</p>
+                                <h3 className={`${recoleta.className} text-3xl lg:text-3xl 2xl:text-3xl font-semibold mb-2`}>{video.title}</h3>
+                                <p className={`${poppins.className} text-black text-lg mb-4 font-semibold`}>Starts at {video.price}</p>
                                 {/* Make the "View" button a link */}
                                 <a
                                     href={video.link}
