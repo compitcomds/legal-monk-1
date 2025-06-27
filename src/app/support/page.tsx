@@ -1,8 +1,8 @@
 import React from "react";
-// import Image from "next/image";
 import Books from "../components/marquee";
-import Navbar from "../components/Home/Navbar";
+import Navbar from "@/components/nav/Navbar";
 import FooterSection from "../components/Home/FooterSection";
+
 const SubscriptionComponent: React.FC = () => {
   return (
     <>

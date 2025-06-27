@@ -1,6 +1,6 @@
 import React from "react";
 import Videos from "../components/courses";
-import Navbar from "../components/Home/Navbar";
+import Navbar from "@/components/nav/Navbar";
 import FooterSection from "../components/Home/FooterSection";
 
 const SubscriptionComponent: React.FC = () => {

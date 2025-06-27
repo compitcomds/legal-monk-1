@@ -1,10 +1,6 @@
 import AboutSection from "./components/Home/AboutSection";
 import FooterSection from "./components/Home/FooterSection";
-import HelpSection from "./components/Home/HelpSection";
-import Navbar from "./components/Home/Navbar";
-// import PodcastSection from "./components/Home/PodcastSection";
-// import ProductShowcase from "./components/Home/ProductShowcase";
-// import SubscribeSection from "./components/Home/SubscribeSection";
+import Navbar from "@/components/nav/Navbar";
 import SubscriptionComponent from "./components/Home/SubscriptionComponent";
 import VideoSlider from "./components/Home/VideoSlider";
 import ComunityCourses from "./components/Home/CommunityCourses";
@@ -18,17 +14,10 @@ export default function Home() {
       <div className="mb-16 min-h-screen space-y-10 bg-white px-5 lg:mb-28 lg:space-y-28 2xl:px-60">
         <SubscriptionComponent />
         <ComunityCourses />
-        {/* <HelpSection /> */}
         <AboutSection />
       </div>
 
       <VideoSlider />
-
-      {/* <div className="bg-white px-5 2xl:px-60">
-        <PodcastSection />
-        <SubscribeSection />
-        <ProductShowcase />
-      </div> */}
       <FooterSection />
     </>
   );
