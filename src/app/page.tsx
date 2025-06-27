@@ -12,16 +12,16 @@ import ComunityCourses from "./components/Home/CommunityCourses";
 export default function Home() {
   return (
     <>
-    <div className="bg-white px-5 2xl:px-60  pt-3 md:pt-5">
-    <Navbar /></div>
-      <div className="bg-white px-5 2xl:px-60 min-h-screen space-y-10 lg:space-y-28 mb-16 lg:mb-28">
-        
+      <div className="bg-white px-5 pt-3 md:pt-5 2xl:px-60">
+        <Navbar />
+      </div>
+      <div className="mb-16 min-h-screen space-y-10 bg-white px-5 lg:mb-28 lg:space-y-28 2xl:px-60">
         <SubscriptionComponent />
         <ComunityCourses />
         {/* <HelpSection /> */}
-        <AboutSection />        
+        <AboutSection />
       </div>
-      
+
       <VideoSlider />
 
       {/* <div className="bg-white px-5 2xl:px-60">

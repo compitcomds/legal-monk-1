@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 
-import one from '../../../assets/1.png'
-import two from '../../../assets/2.png'
-import three from '../../../assets/3.png'
-import { cn } from "@/lib/utils"
+import one from "../../../assets/1.png";
+import two from "../../../assets/2.png";
+import three from "../../../assets/3.png";
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,7 +13,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu";
 
 // Updated resourcesByType with new icons
 const resourcesByType = [
@@ -34,22 +34,34 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent font-normal lg:font-semibold text-lg px-0">Free Resources</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-transparent px-0 text-lg font-normal lg:font-semibold">
+            Free Resources
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="grid w-[300px] md:w-[500px] lg:w-[600px] grid-cols-1 md:grid-cols-2 gap-6 p-4">
+            <div className="grid w-[300px] grid-cols-1 gap-6 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               <div>
-                <h3 className="mb-3 text-md font-semibold">Browse by type:</h3>
+                <h3 className="text-md mb-3 font-semibold">Browse by type:</h3>
                 <ul className="space-y-3">
                   {resourcesByType.map((item) => (
-                    <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} />
+                    <ListItem
+                      key={item.title}
+                      title={item.title}
+                      href={item.href}
+                      icon={item.icon}
+                    />
                   ))}
                 </ul>
               </div>
               <div>
-                <h3 className="mb-3 text-md font-semibold">Guides & Media:</h3>
+                <h3 className="text-md mb-3 font-semibold">Guides & Media:</h3>
                 <ul className="space-y-3">
                   {resourcesByTopic.map((item) => (
-                    <ListItem key={item.title} title={item.title} href={item.href} icon={item.icon} />
+                    <ListItem
+                      key={item.title}
+                      title={item.title}
+                      href={item.href}
+                      icon={item.icon}
+                    />
                   ))}
                 </ul>
               </div>
@@ -73,17 +85,17 @@ const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
         <a
           ref={ref}
           className={cn(
-            "flex items-center space-x-3 p-2 rounded-md transition hover:bg-gray-100",
-            className
+            "flex items-center space-x-3 rounded-md p-2 transition hover:bg-gray-100",
+            className,
           )}
           {...props}
         >
           {/* Render the icon as an img element */}
-          <img src={icon} alt={title} className="w-10 h-10" />
+          <img src={icon} alt={title} className="h-10 w-10" />
           <span className="text-xl font-medium">{title}</span>
         </a>
       </NavigationMenuLink>
     </li>
-  )
+  ),
 );
 ListItem.displayName = "ListItem";

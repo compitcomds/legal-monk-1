@@ -1,5 +1,5 @@
-'use client'
-import React from 'react';
+"use client";
+import React from "react";
 
 const articles = [
   {
@@ -46,22 +46,36 @@ const articles = [
   },
 ];
 
-const ArticleCard: React.FC<{ article: typeof articles[0] }> = ({ article }) => (
-  <div className="p-4 rounded-3xl transition transform hover:scale-105 duration-300 ease-in-out">
-    <div className={`p-8 rounded-3xl ${article.bgColor}`}>
-      <img src={article.imgSrc} alt={article.title} className="w-full object-cover mb-4 rounded-3xl" />
-      <h2 className="text-xl lg:text-3xl 2xl:text-4xl font-bold mb-2">{article.title}</h2>
-      <p className="text-sm text-gray-600 mb-4">{article.date}</p>
-      <p className="text-gray-800 mb-4 lg:text-lg 2xl:text-xl">{article.description}</p>
-      <a href="#" className="text-blue-500 hover:underline">Continue Reading</a>
+const ArticleCard: React.FC<{ article: (typeof articles)[0] }> = ({
+  article,
+}) => (
+  <div className="transform rounded-3xl p-4 transition duration-300 ease-in-out hover:scale-105">
+    <div className={`rounded-3xl p-8 ${article.bgColor}`}>
+      <img
+        src={article.imgSrc}
+        alt={article.title}
+        className="mb-4 w-full rounded-3xl object-cover"
+      />
+      <h2 className="mb-2 text-xl font-bold lg:text-3xl 2xl:text-4xl">
+        {article.title}
+      </h2>
+      <p className="mb-4 text-sm text-gray-600">{article.date}</p>
+      <p className="mb-4 text-gray-800 lg:text-lg 2xl:text-xl">
+        {article.description}
+      </p>
+      <a href="#" className="text-blue-500 hover:underline">
+        Continue Reading
+      </a>
     </div>
   </div>
 );
 
 const Articles: React.FC = () => (
-  <div className="max-w-8xl mx-auto p-4 mt-5 mb-16 lg:mb-28">
-    <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold mb-8">All Recent Articles</h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:gap-10">
+  <div className="max-w-8xl mx-auto mb-16 mt-5 p-4 lg:mb-28">
+    <h1 className="mb-8 text-3xl font-bold lg:text-5xl 2xl:text-6xl">
+      All Recent Articles
+    </h1>
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 2xl:gap-10">
       {articles.map((article, index) => (
         <ArticleCard key={index} article={article} />
       ))}
