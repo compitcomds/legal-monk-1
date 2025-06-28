@@ -1,7 +1,7 @@
 import AllCourses from "./_components/AllCourses";
 import fetchCourses from "./request";
 
-export const revalidate = 60 * 5;
+export const revalidate = 300;
 
 export default async function AllCoursesPage() {
   const courses = await fetchCourses();

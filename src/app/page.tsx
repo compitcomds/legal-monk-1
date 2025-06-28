@@ -3,6 +3,8 @@ import SubscriptionComponent from "./components/Home/SubscriptionComponent";
 import CourseCardCarousel from "./components/course/CardCarousel";
 import ComunityCourses from "./components/Home/CommunityCourses";
 
+export const revalidate = 300;
+
 export default function Home() {
   return (
     <>

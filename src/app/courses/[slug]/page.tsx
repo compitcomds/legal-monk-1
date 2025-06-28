@@ -8,7 +8,7 @@ import WhoShouldTakeThisCourseSection from "./_components/WhoShouldTakeThisCours
 import fetchCourse from "./request";
 import Custom404 from "@/components/404";
 
-export const revalidate = 60 * 5;
+export const revalidate = 300;
 
 export default async function CoursePage({
   params,
