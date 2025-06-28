@@ -1,7 +1,10 @@
-import React from "react";
-import AllCourses from "../components/courses";
+import AllCourses from "./_components/AllCourses";
+import fetchCourses from "./request";
 
-const SubscriptionComponent: React.FC = () => {
+export const revalidate = 60 * 5;
+
+export default async function AllCoursesPage() {
+  const courses = await fetchCourses();
   return (
     <>
       <div className="mb-16 flex items-center rounded-b-xl bg-[#f9f6f3] px-5 py-16 font-title md:px-20 lg:mb-28 lg:rounded-b-3xl lg:px-24 lg:py-28">
@@ -25,9 +28,7 @@ const SubscriptionComponent: React.FC = () => {
           </div>
         </div>
       </div>
-      <AllCourses />
+      <AllCourses courses={courses} />
     </>
   );
-};
-
-export default SubscriptionComponent;
+}
