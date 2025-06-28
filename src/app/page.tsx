@@ -1,6 +1,6 @@
 import AboutSection from "./components/Home/AboutSection";
 import SubscriptionComponent from "./components/Home/SubscriptionComponent";
-import VideoSlider from "./components/Home/VideoSlider";
+import CourseCardCarousel from "./components/course/CardCarousel";
 import ComunityCourses from "./components/Home/CommunityCourses";
 
 export default function Home() {
@@ -11,8 +11,7 @@ export default function Home() {
         <ComunityCourses />
         <AboutSection />
       </div>
-
-      <VideoSlider />
+      <CourseCardCarousel />
     </>
   );
 }

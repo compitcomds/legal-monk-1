@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Poppins } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import FooterSection from "../components/FooterSection";
-
-const poppins = Poppins({
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-});
+import { poppins } from "./fonts";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
