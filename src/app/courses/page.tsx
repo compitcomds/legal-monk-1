@@ -1,13 +1,10 @@
 import React from "react";
 import Videos from "../components/courses";
-import Navbar from "@/components/nav/Navbar";
-import FooterSection from "../components/Home/FooterSection";
 
 const SubscriptionComponent: React.FC = () => {
   return (
     <>
-      <div className="min-h-screen bg-white px-5 pt-3 md:pt-5 2xl:px-60">
-        <Navbar />
+      <div className="min-h-screen bg-white">
         <div className="mb-16 flex flex-col items-center rounded-b-xl bg-[#f9f6f3] px-5 py-16 font-title md:px-20 lg:mb-28 lg:rounded-b-3xl lg:px-24 lg:py-28">
           <div className="flex flex-col items-center justify-between gap-10 lg:flex-row-reverse">
             <div className="relative w-full lg:w-1/2">
@@ -31,7 +28,6 @@ const SubscriptionComponent: React.FC = () => {
         </div>
         <Videos />
       </div>
-      <FooterSection />
     </>
   );
 };

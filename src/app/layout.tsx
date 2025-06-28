@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/nav/Navbar";
+import FooterSection from "./components/Home/FooterSection";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
@@ -29,9 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={` ${poppins.className} ${geistMono.variable} antialiased`}
+        className={` ${poppins.className} ${geistMono.variable} pt-3 antialiased md:pt-5`}
       >
-        {children}
+        <main className="px-5 2xl:px-32">
+          <Navbar />
+          {children}
+        </main>
+        <FooterSection />
       </body>
     </html>
   );

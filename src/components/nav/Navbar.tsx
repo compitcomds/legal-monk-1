@@ -1,10 +1,16 @@
 import Link from "next/link";
 import MobileNavbarToggler from "./NavbarToggler";
+import { cn } from "@/lib/utils";
 
-export default function Navbar() {
+export default function Navbar({ className }: { className?: string }) {
   const mobileNavbarId = "mobile-navbar";
   return (
-    <nav className="rounded-t-xl bg-[#f9f6f3] p-4 lg:rounded-t-3xl xl:px-20 2xl:px-24">
+    <nav
+      className={cn(
+        "rounded-t-xl bg-[#f9f6f3] p-4 lg:rounded-t-3xl xl:px-20 2xl:px-24",
+        className,
+      )}
+    >
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center font-bold">
           <span className="ml-2 text-2xl font-bold text-blue-500 2xl:text-4xl">

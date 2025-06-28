@@ -62,8 +62,7 @@ const PopularVideosCarousel: React.FC = () => {
   ];
 
   return (
-    <div className="mb-16 lg:mb-28 2xl:px-60">
-      {/* Heading and Buttons */}
+    <div className="mb-16 lg:mb-28">
       <div className="mb-6 flex items-center justify-between px-5">
         <h2
           className={`${recoleta.className} text-[34px] font-bold lg:text-7xl 2xl:text-7xl`}

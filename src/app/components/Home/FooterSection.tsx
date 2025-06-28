@@ -1,25 +1,19 @@
-"use client";
 import React from "react";
+import Link from "next/link";
 
 const FooterSection: React.FC = () => {
   return (
-    <footer className="bg-[#f9f6f3] px-6 py-10 md:px-20 2xl:px-40">
-      <div className="">
+    <footer className="bg-[#f9f6f3] py-10">
+      <div className="px-6 md:px-20 2xl:px-40">
         <div className="flex w-full gap-6">
           <div className="w-full space-y-8">
             <div className="flex items-center justify-center md:justify-start">
-              {/* <img
-                                src="https://placehold.co/80x60" // Replace with actual logo image URL
-                                alt="Legal Monk logo"
-                                className="w-20 h-auto"
-                            /> */}
               <h1 className="text-2xl font-bold text-black lg:text-3xl 2xl:text-4xl">
-                Legal Startup Wala
+                <Link href="/">Legal Startup Wala</Link>
               </h1>
             </div>
-            {/* <p className="text-gray-600 mt-4  2xl:text-lg lg:text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, ab.</p> */}
             <div className="mb-8 md:mb-0">
-              <a href="https://www.instagram.com/legalstartupwala?igsh=Zmo3bDlhZzFzcDVk&utm_source=qr">
+              <Link href="https://www.instagram.com/legalstartupwala?igsh=Zmo3bDlhZzFzcDVk&utm_source=qr">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
@@ -56,74 +50,46 @@ const FooterSection: React.FC = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <a
+            <Link
               href="/notes"
               className="text-black hover:font-bold hover:text-blue-600 2xl:text-xl"
             >
               Free Resources
-            </a>
-            <a
+            </Link>
+            <Link
               href="/#community"
               className="text-black hover:font-bold hover:text-blue-600 2xl:text-xl"
             >
               Comunity Courses
-            </a>
-            <a
+            </Link>
+            <Link
               href="/support"
               className="text-black hover:font-bold hover:text-blue-600 2xl:text-xl"
             >
               My Support System
-            </a>
+            </Link>
           </div>
-          {/* <div className="w-full lg:flex flex-col lg:items-center">
-
-                        <ul className="space-y-5 2xl:text-lg font-semibold">
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">About Us</a></li>
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Jobs</a></li>
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Contact</a></li>
-                        </ul>
-                    </div> */}
-
-          {/* <div className="w-full lg:flex flex-col lg:items-center">
-
-                        <ul className="space-y-5 2xl:text-lg font-semibold">
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Newsletter</a></li>
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Articles & Guides</a></li>
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Podcast</a></li>
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Videos</a></li>
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Book Notes</a></li>
-                        </ul>
-                    </div> */}
-
-          {/* <div className="w-full lg:flex flex-col lg:items-center">
-
-                        <ul className="space-y-5 2xl:text-lg font-semibold">
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">My Book</a></li>
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">Productivity Lab</a></li>
-                            <li><a href="#" className="text-gray-600 underline hover:text-black hover:no-underline">YouTuber Academy</a></li>
-                        </ul>
-                    </div> */}
+        </div>
+        <div className="mt-8 flex flex-col items-center justify-between gap-10 border-t border-gray-200 pt-6 font-semibold md:flex-row md:gap-4">
+          <p className="text-sm text-black">
+            © Legal Startup Wala 2024. All rights reserved.
+          </p>
+          <div className="flex space-x-4 text-sm text-gray-600">
+            <Link href="#" className="hover:underline">
+              Privacy Policy
+            </Link>
+            <span>/</span>
+            <Link href="#" className="hover:underline">
+              Terms & Conditions
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className="mt-8 flex flex-col items-center justify-between gap-10 border-t border-gray-200 pt-6 font-semibold md:flex-row md:gap-4">
-        <p className="text-sm text-black">
-          © Legal Startup Wala 2024. All rights reserved.
-        </p>
-        <div className="flex space-x-4 text-sm text-gray-600">
-          <a href="#" className="hover:underline">
-            Privacy Policy
-          </a>
-          <span>/</span>
-          <a href="#" className="hover:underline">
-            Terms & Conditions
-          </a>
-        </div>
-      </div>
       <div className="my-10 w-full text-center text-3xl font-semibold uppercase md:text-5xl lg:my-20 lg:text-8xl 2xl:text-9xl">
         Legal Startup Wala
       </div>
