@@ -28,7 +28,12 @@ export default async function AllCoursesPage() {
           </div>
         </div>
       </div>
-      <AllCourses courses={courses} />
+      <div className="mb-16 px-4 lg:mb-28">
+        <h1 className="mb-4 text-3xl font-bold lg:my-10 lg:text-5xl 2xl:text-6xl">
+          All Courses
+        </h1>
+        <AllCourses courses={courses} />
+      </div>
     </>
   );
 }
