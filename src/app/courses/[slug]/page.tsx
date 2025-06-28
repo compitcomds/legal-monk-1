@@ -5,28 +5,10 @@ import orangeUnderline from "@/assets/underlines/orange.png";
 import WhatWillYouGetSection from "./_components/WhatWillYouGet";
 import SyllabusSection from "./_components/SyllabusSection";
 import WhoShouldTakeThisCourseSection from "./_components/WhoShouldTakeThisCourse";
+import fetchCourse from "./request";
+import Custom404 from "@/components/404";
 
-const whatWillYouGet = [
-  "Smart text support",
-  "Detailed analysis of concepts",
-  "Concepts visualized through infographics",
-  "Recorded video lectures",
-  "Practice assessments",
-];
-const courseSyllabus = [
-  "Introduction to React||15 mins",
-  "Components and Props||25 mins",
-  "State Management||30 mins",
-  "Event Handling||20 mins",
-  "API Integration||35 mins",
-];
-
-const whoShouldTakeThisCourse = [
-  "For teachers",
-  "For students",
-  "For people",
-  "For everyone",
-];
+export const revalidate = 60 * 5;
 
 export default async function CoursePage({
   params,
@@ -34,6 +16,9 @@ export default async function CoursePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const course = await fetchCourse(slug);
+  if (!course) return <Custom404 />;
+
   return (
     <>
       <section className="relative mb-16 flex flex-col items-center justify-center gap-y-8 rounded-b-xl bg-[#f9f6f3] p-4 lg:mb-72 lg:pb-60 lg:pt-8">
@@ -44,12 +29,10 @@ export default async function CoursePage({
               recoleta.className,
             )}
           >
-            Legal Reasoning Course For CLAT UG Exam 2025
+            {course.meta_data.title}
           </h1>
           <p className="mb-4 mt-2 text-center font-sans text-sm leading-5 text-black md:text-lg lg:mt-8">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-            laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ad, eius!
+            {course.meta_data.excerpt}
           </p>
 
           <a
@@ -57,9 +40,10 @@ export default async function CoursePage({
             target="_blank"
             className="mx-auto block w-full rounded-xl bg-yellow-400 px-6 py-4 text-center font-bold text-black hover:bg-yellow-600 md:w-[40%] lg:text-xl"
           >
-            Enroll Now For <br className="sm:hidden" /> ₹2999
+            Enroll Now For <br className="sm:hidden" /> ₹
+            {course.meta_data.sale_price}
             <span className="ml-2 inline-block text-xs text-gray-700 line-through sm:text-sm">
-              ₹4000
+              ₹{course.meta_data.price}
             </span>
           </a>
         </div>
@@ -75,16 +59,24 @@ export default async function CoursePage({
         </div>
 
         <iframe
-          src="https://www.youtube.com/embed/6HUeVxHdM6Q?si=gNqs-6xJbhohw5M4"
+          src={course.meta_data.trailer_url}
           className="block aspect-video w-full rounded-xl dark:hidden lg:absolute lg:bottom-0 lg:w-1/2 lg:translate-y-[45%]"
         ></iframe>
       </section>
 
-      <WhatWillYouGetSection items={whatWillYouGet} className="mb-8 lg:mb-16" />
+      <WhatWillYouGetSection
+        items={course.meta_data.what_will_you_get}
+        className="mb-8 lg:mb-16"
+      />
 
-      <SyllabusSection items={courseSyllabus} className="mb-8 lg:mb-16" />
+      <SyllabusSection
+        items={course.meta_data.course_syllabus}
+        className="mb-8 lg:mb-16"
+      />
 
-      <WhoShouldTakeThisCourseSection items={whoShouldTakeThisCourse} />
+      <WhoShouldTakeThisCourseSection
+        items={course.meta_data.who_should_take_this_course}
+      />
     </>
   );
 }
