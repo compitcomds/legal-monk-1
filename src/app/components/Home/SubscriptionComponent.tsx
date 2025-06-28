@@ -4,6 +4,7 @@ import hero from "../../../assets/parth bhaiya.png";
 import parth from "../../../assets/parth bhaiya with students@3x.png";
 import { recoleta } from "@/app/fonts";
 import { poppins } from "@/app/fonts";
+
 const SubscriptionComponent: React.FC = () => {
   return (
     <div
@@ -38,15 +39,15 @@ const SubscriptionComponent: React.FC = () => {
             />
           </div>
           <p
-            className={`${poppins.className} mt-10 font-sans text-lg leading-5 text-black md:text-2xl lg:mt-8`}
+            className={`${poppins.className} mb-4 mt-10 font-sans text-sm leading-5 text-black md:text-lg lg:mt-8`}
           >
             I am Parth, a master's student on a 100% scholarship at Penn State
             University, USA. I have also secured admission to LSE and various
             other prestigious universities across the globe.
             <br />
-            <span className={`${recoleta.className}`}>
-              My job : Helping you secure scholarships to study abroad
-            </span>
+          </p>
+          <p className={recoleta.className}>
+            My job : Helping you secure scholarships to study abroad
           </p>
         </div>
       </div>
@@ -63,7 +64,7 @@ const SubscriptionComponent: React.FC = () => {
           >
             Better than Any Consultancy...
           </h2>
-          <p className="my-5 font-sans text-xl lg:text-2xl">
+          <p className="my-5 font-sans text-sm md:text-lg">
             I come from a humble background and was the first in my family to
             study abroad, so I understand the challenges. Here we share
             straight-forward, practical tips that worked for us with you.
