@@ -36,7 +36,7 @@ export default async function CoursePage({
           </p>
 
           <a
-            href="#"
+            href={course.meta_data.checkout_url}
             target="_blank"
             className="mx-auto block w-full rounded-xl bg-yellow-400 px-6 py-4 text-center font-bold text-black hover:bg-yellow-600 md:w-[40%] lg:text-xl"
           >

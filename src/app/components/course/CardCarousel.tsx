@@ -65,7 +65,7 @@ const courses = [
 export default function CourseCardCarousel() {
   return (
     <>
-      <Carousel className="mb-16 lg:mb-28">
+      <Carousel id="free-resources" className="mb-16 lg:mb-28">
         <div className="mb-6 flex flex-col px-5 md:flex-row md:items-center md:justify-between">
           <h2
             className={`${recoleta.className} text-[34px] font-bold lg:text-7xl 2xl:text-7xl`}

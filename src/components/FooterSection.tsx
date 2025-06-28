@@ -55,16 +55,16 @@ const FooterSection: React.FC = () => {
           </div>
           <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Link
-              href="/notes"
+              href="/#free-resources"
               className="text-black hover:font-bold hover:text-yellow-600 2xl:text-xl"
             >
               Free Resources
             </Link>
             <Link
-              href="/#community"
+              href="/courses"
               className="text-black hover:font-bold hover:text-yellow-600 2xl:text-xl"
             >
-              Comunity Courses
+              Our Courses
             </Link>
             <Link
               href="/support"
