@@ -56,19 +56,19 @@ const FooterSection: React.FC = () => {
           <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Link
               href="/notes"
-              className="text-black hover:font-bold hover:text-blue-600 2xl:text-xl"
+              className="text-black hover:font-bold hover:text-yellow-600 2xl:text-xl"
             >
               Free Resources
             </Link>
             <Link
               href="/#community"
-              className="text-black hover:font-bold hover:text-blue-600 2xl:text-xl"
+              className="text-black hover:font-bold hover:text-yellow-600 2xl:text-xl"
             >
               Comunity Courses
             </Link>
             <Link
               href="/support"
-              className="text-black hover:font-bold hover:text-blue-600 2xl:text-xl"
+              className="text-black hover:font-bold hover:text-yellow-600 2xl:text-xl"
             >
               My Support System
             </Link>
@@ -90,7 +90,7 @@ const FooterSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="my-10 w-full text-center text-3xl font-semibold uppercase md:text-5xl lg:my-20 lg:text-8xl 2xl:text-9xl">
+      <div className="my-10 w-full text-center text-3xl font-semibold uppercase md:text-5xl lg:my-20 lg:text-8xl">
         Legal Startup Wala
       </div>
     </footer>
