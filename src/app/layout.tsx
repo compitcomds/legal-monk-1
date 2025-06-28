@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={` ${poppins.className} ${geistMono.variable} pt-3 antialiased md:pt-5`}
       >
-        <main className="px-5 2xl:px-32">
+        <main className="mx-auto mb-8 max-w-screen-2xl px-5 lg:mb-20 2xl:px-32">
           <Navbar />
           {children}
         </main>

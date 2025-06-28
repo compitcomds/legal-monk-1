@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const episodes = [
   {
@@ -66,8 +67,6 @@ const episodes = [
     overlay: "your first $10k per month",
     link: "/",
   },
-
-  // Add more episodes as needed
 ];
 
 const categories = [
@@ -114,23 +113,22 @@ const App: React.FC = () => {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
         {filteredEpisodes.slice(0, visibleEpisodes).map((episode, index) => (
           <div key={index} className="relative rounded-lg border p-4">
-            <a href={episode.link}>
+            <Link href={`/courses/slug1`}>
               <img
                 src={episode.image}
                 alt={episode.title}
                 className="mb-4 h-48 w-full rounded-lg object-cover"
               />
-            </a>
-            {/* <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded">{episode.overlay}</div> */}
+            </Link>
             <h2 className="mb-2 text-xl font-semibold lg:px-4 lg:text-2xl">
               {episode.title}
             </h2>
-            <a
-              href={episode.link}
+            <Link
+              href={`/courses/slug1`}
               className="font-bold text-blue-600 hover:text-blue-500 lg:px-4 lg:text-xl"
             >
               Listen Now &rarr;
-            </a>
+            </Link>
           </div>
         ))}
       </div>

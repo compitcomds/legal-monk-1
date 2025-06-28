@@ -12,28 +12,23 @@ export default function Navbar({ className }: { className?: string }) {
       )}
     >
       <div className="flex items-center justify-between">
-        <Link href="/" className="flex items-center font-bold">
-          <span className="ml-2 text-2xl font-bold text-blue-500 2xl:text-4xl">
-            Legal
-          </span>
-          <span className="text-2xl text-blue-500 2xl:text-4xl">
-            Startup Wala
-          </span>
+        <Link
+          href="/"
+          className="block pl-2 font-bold text-blue-500 lg:text-2xl"
+        >
+          Legal Startup Wala
         </Link>
 
-        <div className="hidden items-center space-x-6 font-semibold xl:flex 2xl:text-lg">
+        <div className="hidden items-center gap-x-6 font-semibold xl:flex">
           <Link href="/" className="text-black hover:underline">
             Home
           </Link>
-          <Link
-            href="/courses"
-            className="text-black hover:underline 2xl:text-lg"
-          >
+          <Link href="/courses" className="text-black hover:underline">
             Our Courses
           </Link>
           <Link
             href="/support"
-            className="rounded-full bg-orange-400 px-4 py-2 text-white shadow-md"
+            className="rounded-full bg-orange-400 px-4 py-2 text-sm text-white shadow-md"
           >
             My Support System
           </Link>

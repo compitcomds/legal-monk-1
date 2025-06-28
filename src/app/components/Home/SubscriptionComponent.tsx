@@ -14,7 +14,7 @@ const SubscriptionComponent: React.FC = () => {
         <div className="relative w-full lg:w-1/3">
           <div className="absolute inset-0 -z-10 h-40 w-40 rounded-full bg-yellow-300 md:h-52 md:w-52"></div>
           <Image
-            src={hero} // Replace with actual image URL
+            src={hero}
             alt="Legal startup wala"
             className="h-full w-full"
           />
