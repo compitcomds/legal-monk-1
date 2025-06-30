@@ -34,7 +34,7 @@ export default function Page() {
                 <div className="pb-4 font-light">{item.body}</div>
 
                 <div className="mt-auto flex items-center gap-4">
-                  <img src={item.image} className="h-9 w-9 rounded-full" />
+                  <img src={item.image} className="h-16 w-16 object-cover rounded-full" />
 
                   <div className="flex flex-col text-sm">
                     <div className="">{item.name}</div>
