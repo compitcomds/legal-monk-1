@@ -11,7 +11,7 @@ export default async function AllCoursesPage() {
         <div className="flex flex-col items-center justify-between gap-10 lg:flex-row-reverse">
           <div className="relative w-full lg:w-1/2">
             <img
-              src="https://placehold.co/400x200"
+              src="/course.png"
               className="w-full"
               alt="All Courses Cover Image"
             />

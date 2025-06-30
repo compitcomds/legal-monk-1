@@ -16,14 +16,14 @@ const AboutSection: React.FC = () => {
         <div className="flex flex-col-reverse justify-between gap-6 lg:flex-row lg:gap-10 2xl:gap-10">
           <div className="mb-10 w-full lg:mb-0">
             <h1
-              className={`${recoleta.className} mb-6 text-4xl font-semibold text-black lg:text-4xl 2xl:text-7xl`}
+              className={`${recoleta.className} mb-6 text-4xl font-semibold text-black lg:text-4xl 2xl:text-5xl`}
             >
               Hi, I'm{" "}
               <span className="relative text-blue-600">
                 Parth Jain{" "}
                 <Image
                   src={yellowUnderline}
-                  className="absolute right-0 top-5 2xl:top-12 w-40"
+                  className="absolute right-0 top-5 2xl:top-5 w-40 lg:w-56"
                   alt="Underline | Hi, I'm Parth Jain | Startup Legal Wala"
                 />
               </span>
