@@ -21,9 +21,7 @@ export default async function AllCoursesPage() {
               Our Courses
             </h1>
             <p className="mt-2 font-sans text-sm leading-5 text-black md:text-lg lg:mt-8">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-              laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ad, eius!
+              I bring the best educators on board by providing them with technology and all the necessary support, on a revenue sharing basis. This helps them create an additional source of income, while I retain control over pricing. That’s how we offer the most affordable prices without compromising on quality
             </p>
           </div>
         </div>

@@ -1,31 +1,24 @@
 const items = [
   {
-    name: "Sophia Martinez",
-    title: "Lead designer, Avalon",
+    name: "Charvi",
+    title: "Co-Founder, FG Lawkit",
     image:
-      "https://images.generated.photos/TdA_3xKb49DtgqfPPu5REnQFiALErCu6i3M2I_1AqIA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDAwNTU5LmpwZw.jpg",
-    body: "I've been in the design game for a while now and this kit is one of the best. It's made me fall in love with designing all over again. It's just brilliant.",
+      "/charvi.jpg",
+    body: " I make sure every compliance is double-checked—nothing gets past me. Need legal advice? Just DM us on our socials!",
   },
   {
-    name: "Caroline Lee",
-    title: "Senior Graphic Designer, Echo",
+    name: "Archit Jain",
+    title: "CEO, Compitcom Pvt Ltd",
     image:
-      "https://images.generated.photos/mp3gkB9z2wwhyySWzQJMegNbvvLV6HbKQX1_h6BEYAc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDAwOTI5LmpwZw.jpg",
-    body: "I'm a newbie designer and this kit is just perfect. I've learnt so much and my work looks amazing now. A big thumbs up!",
+      "/archit.webp",
+    body: "I personally ensure every detail is flawless—no compromises here. Looking to elevate your digital presence? Just DM us on our socials!",
   },
   {
-    name: "Tyler Otwell",
-    title: "CTO, Apple",
+    name: "Teesha Sharma",
+    title: "Graphic Designer",
     image:
-      "https://images.generated.photos/vOkveSlBohR880A8z67aLHImhPr7UHdnXg06pifYvZ4/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDAyNjg4LmpwZw.jpg",
-    body: "This design kit is a game changer! My designs look better and I get things done faster. Totally recommending it to my mates!",
-  },
-  {
-    name: "Jake Harris",
-    title: "Thompson Creative",
-    image:
-      "https://images.generated.photos/d_r3VzW3lO5ZsdaHhoVX7msWku7YIrqP4Qn1yozJU54/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDAyMTQ4LmpwZw.jpg",
-    body: "I'm a newbie designer and this kit is just perfect. I've learnt so much and my work looks amazing now. A big thumbs up!",
+      "/teesha.jpg",
+    body: "Hey there! I create, play, and have fun with design. My besties? Canva, Illustrator, and Premiere Pro. We make cool stuff together—hope you like it! P.S. I'm secretly learning German… shhh",
   },
 ];
 

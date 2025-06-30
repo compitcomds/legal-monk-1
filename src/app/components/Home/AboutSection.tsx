@@ -23,7 +23,7 @@ const AboutSection: React.FC = () => {
                 Parth Jain{" "}
                 <Image
                   src={yellowUnderline}
-                  className="absolute right-0 top-5 w-40"
+                  className="absolute right-0 top-5 2xl:top-12 w-40"
                   alt="Underline | Hi, I'm Parth Jain | Startup Legal Wala"
                 />
               </span>
@@ -50,7 +50,7 @@ const AboutSection: React.FC = () => {
               creation journey in Hindi, focused on supporting the
               underprivileged student community in northern India.
             </p>
-            <a href="#" className="flex items-center gap-2 text-xl text-black">
+            <a href="https://www.linkedin.com/in/parthjain98/?originalSubdomain=in" className="flex items-center gap-2 text-xl text-black">
               <p className="underline hover:no-underline">
                 For my professional bio
               </p>

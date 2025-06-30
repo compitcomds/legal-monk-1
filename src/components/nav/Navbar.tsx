@@ -14,9 +14,10 @@ export default function Navbar({ className }: { className?: string }) {
       <div className="flex items-center justify-between">
         <Link
           href="/"
-          className="block pl-2 font-bold text-blue-500 lg:text-2xl"
+          className="flex items-center gap-3 font-bold text-blue-500 lg:text-xl"
         >
-          Legal Startup Wala
+          <img className="rounded-full w-[60px]" src="/logo.png" alt="" />
+          Legal Startup <br /> Wala Academy
         </Link>
 
         <div className="hidden items-center gap-x-6 font-semibold xl:flex">
