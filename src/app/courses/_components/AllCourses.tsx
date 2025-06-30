@@ -17,10 +17,11 @@ export default async function AllCourses({
               className="mb-4 h-48 w-full rounded-lg object-cover"
             />
           </Link>
-          <h2 className="mb-4 text-xl font-semibold lg:px-4 lg:text-2xl">
-            {course.meta_data.title}
-          </h2>
-
+          <Link href={`/courses/${course.handle}`} className="w-fit">
+            <h2 className="mb-4 text-xl font-semibold w-fit hover:text-blue-500 lg:px-4 lg:text-2xl">
+              {course.meta_data.title}
+            </h2>
+          </Link>
           <div className="group flex flex-col gap-3 overflow-clip sm:flex-row sm:items-center sm:justify-between">
             <Link
               href={`/courses/${course.handle}`}
@@ -31,7 +32,7 @@ export default async function AllCourses({
             <Link
               href={course.meta_data.checkout_url}
               target="_blank"
-              className="inline-flex items-center justify-center rounded-lg bg-yellow-600 px-4 py-2 text-sm font-semibold text-white transition duration-500 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 group-hover:translate-x-0 sm:px-6 sm:py-2.5 lg:-translate-x-[300%] lg:text-base"
+              className="inline-flex items-center justify-center rounded-lg bg-yellow-600 px-4 py-2 text-sm font-semibold text-white transition duration-500 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 sm:px-6 sm:py-2.5  lg:text-base"
             >
               Buy Now
             </Link>
