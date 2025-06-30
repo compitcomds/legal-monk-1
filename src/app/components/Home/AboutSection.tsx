@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
     >
       <div className="mb-10 flex flex-col items-center px-6 py-5 md:px-20 lg:items-start lg:px-40 lg:py-16">
         {/* Left Section */}
-        <div className="flex flex-col-reverse justify-between gap-6 lg:flex-row lg:gap-10 2xl:gap-32">
+        <div className="flex flex-col-reverse justify-between gap-6 lg:flex-row lg:gap-10 2xl:gap-10">
           <div className="mb-10 w-full lg:mb-0">
             <h1
               className={`${recoleta.className} mb-6 text-4xl font-semibold text-black lg:text-4xl 2xl:text-7xl`}
@@ -29,20 +29,20 @@ const AboutSection: React.FC = () => {
               </span>
             </h1>
             <p
-              className={`${poppins.className} font-poppins mb-4 text-lg text-black lg:text-xl`}
+              className={`${poppins.className} font-poppins mb-4 text-lg text-black lg:text-lg`}
             >
               Namaste, I'm Parth Jain. I'm a lawyer-turned-Youtuber, podcaster,
               and socialpreneur. I have been creating content and resources
               since the early years of my law school.
             </p>
             <p
-              className={`${poppins.className} mb-4 text-lg text-black lg:text-xl`}
+              className={`${poppins.className} mb-4 text-lg text-black lg:text-lg`}
             >
               <span className={`${recoleta.className} font-bold text-blue-500`}>
-                Want to know what my superpower is?
+                Want to know what my superpower is? 
               </span>
               <span>
-                I bring the smartest people into the room and convert their
+                &nbsp;I bring the smartest people into the room and convert their
                 experiences and knowledge into accessible resources for the
                 larger community.
               </span>
