@@ -12,6 +12,8 @@ const TermsAndConditons: React.FC = () => {
               <a
                 href="https://www.legalstartupwala.in"
                 className="text-blue-600 underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 www.legalstartupwala.in
               </a>{" "}

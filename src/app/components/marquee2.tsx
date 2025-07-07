@@ -8,7 +8,7 @@ const items = [
   },
   {
     name: "Archit Jain",
-    title: "CEO, Compitcom Pvt Lt16",
+    title: "CEO, Compitcom Pvt Ltd",
     image:
       "/archit.webp",
     body: "I personally ensure every detail is flawless—no compromises here. Looking to elevate your digital presence? Just DM us on our socials!",

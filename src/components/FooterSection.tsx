@@ -50,7 +50,7 @@ const FooterSection: React.FC = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="mailto:legalstartupwala.in"
+                href="mailto:parth@legalstartupwala.in"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl border  text-white hover:text-black hover:bg-white rounded-full p-2"
